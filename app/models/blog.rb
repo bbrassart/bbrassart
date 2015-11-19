@@ -3,4 +3,6 @@ class Blog
   field :title, type: String
   field :text, type: String
   field :date, type: Date
+  field :tags, type: Array
+  
 end
