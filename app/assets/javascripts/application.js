@@ -18,4 +18,7 @@
 $(document).on('ready page:load', function () {
   var listenToGithub = Object.create(github);
   listenToGithub.setInitialListeners();
+
+  var listenToCV = Object.create(cv);
+  listenToCV.setInitialListeners();
 });

@@ -21,26 +21,22 @@ var github = {
   processAjax: function (response) {
     var html = ``;
     debugger;
-    html += `<p>I'm currently working on ${response.length} projects<p><br><table class="pure-table">
+    html += `<p>Currently working on ${response.length} projects<p><br><table class="pure-table">
     <thead>
         <tr>
             <th>Name</th>
             <th>Technology</th>
-            <th>Direct link</th>
             <th>Last commit</th>
         </tr>
     </thead>
     <tbody>`;
     response.forEach(function(project) {
-      html += `<table class="pure-table">
-      <thead>
+      html += `
           <tr>
-              <th>${project.name}</th>
+              <th><a href="https://www.github.com/${project.full_name}" target=_blank>${project.name}</a></th>
               <th>${project.language}</th>
-              <th><a href="https://www.github.com/${project.full_name}" target=_blank></a></th>
               <th>${project.updated_at}</th>
-          </tr>
-      </thead>`;
+          </tr>`;
     });
     html += `</tbody></table>`;
     $('#showGithub').html("");
