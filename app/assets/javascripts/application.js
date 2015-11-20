@@ -14,3 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).on('ready page:load', function () {
+  var listenToGithub = Object.create(github);
+  listenToGithub.setInitialListeners();
+});
