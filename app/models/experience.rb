@@ -7,5 +7,5 @@ class Experience
   field :starting_date, type: Date
   field :ending_date, type: Date
   field :description, type: String
-  embed_in :year
+  embedded_in :year
 end

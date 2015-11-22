@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       get 'blogs' => 'blogs#index'
       get 'blogs/:id' => 'blogs#show'
+
+      get 'experiences/:year' => 'experiences#all_experiences'
     end
   end
   #admin routes
