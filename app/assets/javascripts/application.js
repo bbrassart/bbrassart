@@ -19,6 +19,10 @@ $(document).on('ready page:load', function () {
   var listenToGithub = Object.create(github);
   listenToGithub.setInitialListeners();
 
+  $('#showInstagram').hide();
+  var listenToSocialMedia = Object.create(socialMedia);
+  listenToSocialMedia.setInitialListeners();
+
   var listenToCV = Object.create(cv);
   listenToCV.setInitialListeners();
 });
