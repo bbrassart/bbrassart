@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       get 'blogs' => 'blogs#index'
-      get 'blogs/:id' => 'blogs#show'
+      get 'blogs/:index' => 'blogs#show'
 
       get 'experiences/:year' => 'experiences#all_experiences'
     end

@@ -156,6 +156,12 @@ h3 {
     background: none;
 }
 
+.content {
+  margin-left: 3% !important;
+  margin-right: 3% !important;
+}
+
+
 @media (min-width: 48em) {
     .content {
         padding: 2em 3em 0;

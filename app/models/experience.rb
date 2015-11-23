@@ -7,5 +7,6 @@ class Experience
   field :starting_date, type: Date
   field :ending_date, type: Date
   field :description, type: String
+  field :tags, type: Array
   embedded_in :year
 end

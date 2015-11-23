@@ -6,24 +6,28 @@ var cv = {
     var self = this;
     $('.triggerCv').on('click',  function() {
       year = event.currentTarget.dataset["hook"];
-      if (self.trigger) {
-        var request = $.get(self.apiUrl.concat(year));
-        request.done(self.processAjax);
-      }
-      else {
-        $('#showCv').html("");
-      }
-      self.trigger = !self.trigger;
+      var request = $.get(self.apiUrl.concat(year));
+      request.done(self.processAjax);
     });
   },
 
   processAjax: function(data) {
-    var html = ""
-    html += `<p>Starting date: ${data[0].starting_date}; ending date: ${data[0].ending_date}</p>
-            <img src=${data[0].company_logo} width=100px height=100px>
-            <p><b>${data[0].title}</b> at ${data[0].company_name}</p>
-            <p><b>${data[0].location}</b></p>
-            <p><b>${data[0].description}</b></p>`
+    var tagColors = ["design", "pure", "js", "yui"];
+
+    var html = "<br>"
+    data.forEach(function(data) {
+      html += `<p>Starting date: ${data.starting_date}</p>
+      <p>Ending date: ${data.ending_date}</p>
+      <img src=${data.company_logo} width=100px height=100px>
+      <p><b>${data.title}</b> at ${data.company_name}</p>
+      <p><b>${data.location}</b></p>
+      <p><b>${data.description}</b></p>`
+      data.tags.forEach(function(tag) {
+        var color = tagColors[Math.floor(Math.random() * tagColors.length)];
+        html += `<a class="post-category post-category-${color}">${tag}</a>`
+      })
+      html += `<br><br>`
+    });
     $('#showCv').html("");
     $('#showCv').append(html);
   }

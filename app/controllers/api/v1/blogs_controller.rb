@@ -5,7 +5,8 @@ class Api::V1::BlogsController < ApplicationController
   end
 
   def show
-    blog = Blog.find_by(id: params[:id])
+    index = params[:index]
+    blog = Blog.find_by(currentIndex: index)
     render json: blog
   end
 
