@@ -11,16 +11,16 @@ puts "Empty DB"
 
 Blog.create(
 title: "Developers, developers, developers…",
-currentIndex: 2,
+currentIndex: 3,
 image_caption: "Code in GitHub",
-text: "<br>Fifteen years ago, <a href='https://www.youtube.com/watch?v=8To-6VIJZRE' target=_blank>Steve Ballmer</a> was going crazy for developers. I love that clip.
+intro: "Fifteen years ago, <a href='https://www.youtube.com/watch?v=8To-6VIJZRE' target=_blank>Steve Ballmer</a> was going crazy for developers. I love that clip.
   That’s bold (no poke intended ☺) and it will remain in tech history forever.</p>
   <p>Now wait a second, why would one of the most important CEO go crazy, lose his breathe
   and, by doing so, end up in the YouTube ‘Comedy’ section? That should give us an
-  idea of how <b>developers work is crucial</b>.</p>
-  <p>That was 15 years ago. Smartphones and apps did not even exist. Mark Zuckerberg probably
-  didn’t even know what social media was.</p>
-  <p>2015 will be the year of home automation,
+  idea of how <b>developers work is crucial</b>. That was 15 years ago... </p>
+  <p>Smartphones and apps did not even exist... Mark Zuckerberg probably
+    didn’t even know what social media was. ",
+text: "2015 will be the year of home automation,
   <a href='http://attackofthefanboy.com/news/oculus-rift-pre-e3-press-conference-set-for-june-11th-price-and-release-date-announcements-possible/' target=_blank>
     virtual reality headsets</a> and
   a lot, lot more. Facebook Messenger for Android has now been downloaded
@@ -39,7 +39,7 @@ text: "<br>Fifteen years ago, <a href='https://www.youtube.com/watch?v=8To-6VIJZ
   web developers” ☺",
 date: DateTime.new(2015, 6, 8),
 author: "Baptiste Brassart",
-image: "https://s3-us-west-2.amazonaws.com/bbrassart/github.jpg",
+image: "https://s3-us-west-2.amazonaws.com/bbrassart/github_code.jpg",
 author_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/bbrassart_avatar.jpg",
 tags: ["development", "tech", "code"]
 )
@@ -48,18 +48,19 @@ tags: ["development", "tech", "code"]
 
 Blog.create(
 title: "Du GIF en barre: les meilleures applis iPhone",
-currentIndex: 1,
+currentIndex: 2,
 image_caption: "GIF up your life",
 image: "https://s3-us-west-2.amazonaws.com/bbrassart/gif.jpg",
-text: "<p>Le <strong>GIF</strong>, on ne sait plus très bien s'il a le vent en poupe, s'il a toujours été
+intro: "<p>Le <strong>GIF</strong>, on ne sait plus très bien s'il a le vent en poupe, s'il a toujours été
 présent, ou si ce n'est qu'une mode passagère. Dans tous les cas, voici une sélection des
 <strong>meilleures applications iPhone</strong> du moment... pas que je sois fâché avec Android, c'est juste
-que les applis GIF les plus innovantes se trouvent presque toutes sur l'App Store d'Apple.</p><p>
-Les développeurs d'applis de chat qui parient sur le GIF s'en donnent à cœur joie, et
+que les applis GIF les plus innovantes se trouvent presque toutes sur l'App Store d'Apple.</p>
+<p>Les développeurs d'applis de chat qui parient sur le GIF s'en donnent à cœur joie, et
 ils ont bien raison. Le fun est vendeur, le succès des listes BuzzFeed est là pour
-l'attester. Pour ne rien gâcher, c'est souvent parmi ces start-ups que se cachent les
+l'attester.</p>",
+text: "<p>Pour ne rien gâcher, c'est souvent parmi ces start-ups que se cachent les
 fonctionnalités de demain, celles que les géants du Web adopteront à l'unisson, dans les
-semaines et les mois à venir.eruygfkbgrsbukrwebsykuef</p><p>
+semaines et les mois à venir.</p>
 <h2>Guiffe, giffe, G.I.F. version 2014</h2>
 <p>Avant de rentrer dans le vif du sujet, voici un petit retour sur l'actualité bouillonnante
 des dernières semaines:</p><ul><li>YouTube lance un <a href='http://buff.ly/1siLPri' target=_blank>
@@ -168,16 +169,17 @@ tags: ["iphone", "gif", "applis", "ios"]
 
 Blog.create(
 title: "Idées cadeaux: les objets geek pour Noël",
-currentIndex: 0,
+currentIndex: 1,
 image_caption: "Cadeaux de Noël geek",
 image: "https://s3-us-west-2.amazonaws.com/bbrassart/noel_geek.jpg",
-text: "<p>Offrir un cadeau de Noël qui plait n'est jamais une mince affaire. Votre ami est
+intro: "<p>Offrir un cadeau de Noël qui plait n'est jamais une mince affaire. Votre ami est
 <strong>un peu geek</strong> sur les bords? Cette liste de <strong>cadeaux high-tech à petit prix</strong>
 classés par budget est faite pour vous.</p><p>Chaque année, le marché des nouvelles technologies voit
 débarquer des centaines de nouvelles références. De l'objet rare aux produits à éviter, ce n'est pas
 toujours facile de faire le tri. Vous êtes en panne d'idées? J'ai tenté de classer, en fonction de
 différents budgets, les meilleurs <strong>cadeaux spécial geek</strong>, qui feront plaisir à votre
-enfant, à votre ami, ou à tout autre membre de votre famille amateur de nouvelles technologies.</p>
+enfant, à votre ami, ou à tout autre membre de votre famille amateur de nouvelles technologies...</p>",
+text: "
 <h2>Moins de 25 euros: cartes cadeaux d'applications ou de musique en ligne</h2>
 <img src='https://s3-us-west-2.amazonaws.com/bbrassart/spotify.jpg'>
 <p>Que peut-on offrir à un geek pour moins de 50 euros? Un jeu vidéo, bien entendu. Si la PS4 ou la
@@ -233,6 +235,90 @@ date: DateTime.new(2014, 12, 5),
 author: "Baptiste Brassart",
 author_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/bbrassart_avatar.jpg",
 tags: ["noel", "cadeaux", "geek", "fêtes"]
+)
+
+
+Blog.create(
+title: "Comparatif GoPro: quelle caméra choisir?",
+currentIndex: 0,
+image_caption: "Publicité GoPro",
+image: "https://s3-us-west-2.amazonaws.com/bbrassart/gopro_ad.jpg",
+intro: "<p>Inutile de présenter les action cams GoPro, celles qui ont révolutionné le secteur des
+caméras miniatures. Avec un marketing hyper agressif à coup de millions de dollars
+(cf. le nombre de vidéos sponsorisées que poste chaque semaine
+<a href='http://www.theberrics.com/tags/gopro' target=_blank>le Berrics</a>, sans parler du
+surf, du snowboard, des
+<a href='https://www.youtube.com/watch?v=x76VEPXYaI0' target=_blank>partenariats avec RedBull</a>
+, etc) impossible de passer à côté. Bon mais voilà, on a eu la GoPro, la GoPro 2, la 3, et
+maintenant la 4, toutes déclinées en plusieurs modèles. Pas facile de s’y retrouver. Vous avez un budget limité mais vous voulez tout de même
+<strong>filmer vos sessions en HD</strong> avec un son correct et une image propre?",
+text: "</p><h2>Choisir votre GoPro en fonction de vos besoins</h2>
+<p>
+Je vous résume ici mon expérience perso et les raisons pour lesquelles je suis satisfait de
+mon set-up actuel. Voici donc ma config perso, qui marche à merveille pour filmer du
+skateboard:<p><ul><li>La GoPro 2 Silver, qui ne vaut
+<a href='http://www.amazon.fr/Gopro-HERO2-OUTDOOR-Cam%C3%A9ra-%C3%A9tanche/dp/B005WY3TI4' target=_blank>
+plus que 150 eur d’occasion</a>. Avec ça, vous aurez quand même de la Full HD plein pot.</li>
+<li>Un deuxième case GoPro, que j’ai perforé sur le côté pour pouvoir brancher le micro externe.</li>
+<li>Le fameux micro externe, indispensable pour avoir du son correct. Lors du montage,
+je suis obligé de retravailler le son, qui n’est enregistré qu’en mono lors des prises.
+Mais rien de bien compliqué, il suffit de dédoubler le canal mono pour obtenir un
+faux-semblant de stéréo.</li><li>Un handler, poignée de stabilisation en bon français,
+acheté sur <a href='http://www.amazon.fr/Opteka-X-GRIP-Stabilisation-Cam%C3%A9oscopes-Microphone/dp/B003UWQJMI/ref=sr_1_2?ie=UTF8&qid=1415452902&sr=8-2&keywords=xgrip' target=_blank>
+Amazon pour une bouchée de pain</a>. Je vous recommande chaudement la marque XGrip.
+Autre chose: évitez les perches, ces sortes de gros bâtons au bout desquels vous
+accrochez la GoPro. Vous n’arriverez jamais à stabiliser l’image avec ce genre d’accessoires.</li>
+<li>Un poids de chez l’ami Decathlon, que j’enroule autour du handler. Vous fatiguerez
+plus vite lors du filming, mais c’est indipsensable pour stabiliser la vidéo.</li>
+<li>Enfin, les petits accessoires GoPro, pour accrocher la GoPro au handler.</li>
+<img src='https://s3-us-west-2.amazonaws.com/bbrassart/gopro_setup.jpg'>
+<img src='https://s3-us-west-2.amazonaws.com/bbrassart/gopro-setup-unmounted.jpg'>
+<h2>Le résutat en vidéo</h2>
+<iframe width='560' height='315' src='https://www.youtube.com/embed/Ywn4sIHadMo'
+frameborder='0' allowfullscreen></iframe>
+<h2>Pourquoi je n'acheterai pas la GoPro 4 (et quels sont les vrais problèmes)</h2>
+<ul><li><strong>Filmer en 4K mais pour quoi faire?!</strong> Qui a un écran 4K à la maison?!!
+Pour rappel (j’ai l’impression qu’on l’oublie bien souvent) <strong>une source 4K sur un écran
+Full HD, ça fait de la Full HD</strong>, les amis!</li><li><strong>Le son</strong>.
+Rien ne remplace un micro externe, même s’il s’agit d’un simple micro-cravate à 30 euros.
+Si vous souhaitez réaliser des montages semi-pro, le premier obstacle, c’est clairement la
+qualité sonore. Pour info, la GoPro 2 possède une prise mini-jack 3,5mm; pour les modèles
+supérieurs, il faut <a href='http://shop.gopro.com/EMEA/accessories/3.5mm-mic-adapter/AMCCC-301.html' target=_blank>
+acheter un adapteur</a>. Un petit avantage donc pour la GoPro 2.</li>
+<li><strong>La condensation</strong>Après quelques dizaines de minutes de filming, la cam
+chauffe et vous vous retrouvez avec de la buée dans le boitier. La solution: lorsque que
+vous voyez que de la condensation commence à se former, ouvrez le case et nettoyez-le avec
+un sopalin ou un t-shirt (propre!!).</li><li>Les <strong>gouttes d'eau</strong>. Si vous
+filmez du surf, les gouttes d’eau seront votre pire ennemi. Et ça, que vous ayez la
+GoPro 1, 2, 3 ou 4, le problème reste entier. Seule solution: essuyez le case à la main.</li>
+<li><strong>L'application GoPro</strong> pour voir ce qu’on filme. Quand je filme mes potes,
+je suis sur mon cruiser, concentré pour ne pas me prendre leur board en pleine tête,
+s’ils loupent leur trick. Revisionner le trick après: ouais, je suis pas vraiment convaincu.
+Avec le temps, vous saurez de toute façon si vous avez bien filmé la séquence ou non.</li></ul>
+<h2>Et pourquoi je pourrais craquer pour la GoPro 4</h2>
+<ul><li>Pour la <strong>qualité d'image</strong>. Avec un GoPro 2 Silver, il faut absolument
+éviter tous les plans à contre-jour. Cela brûle les couleurs. De nuit, les résultats
+laissent également à désirer. Ca pixelise de partout, bref, c’est pas joli joli. Je pense
+qu’à ce niveau-là, les dernières GoPro ont fait de gros gros progrès - je n’ai malheureusement
+pas eu l’occasion de tester la GoPro 4.</li></ul>
+<h2>Conclusion</h2><ul><li>Règle numéro 1: <strong>tenez-vous éloigné des modèles White</strong>.
+La qualité d’image est vraiment très médicore.</li><li>Règle numéro 2: après avoir acheté
+la GoPro, il faudra forcément repasser à la caisse pour acheter une série d’
+<strong>accessoires</strong>. Pensez-y.</li><li>Règle numéro 3 (qui n’en est pas vraiment une):
+<strong>le filming est aussi important que le caméra</strong>. Plus vous allez filmé vos potes,
+plus vous saurez si votre filming était bon, si vous deviez être placé plus bas,
+plus loin, etc. Cela s’apprend très vite car le fish-eye de la GoPro est très permissif.
+Il existe même <a href='https://www.youtube.com/watch?v=G7_ZI2P-YbY' target=_blank>
+des cours de filming en ligne</a>. C’est Ride Channel qui les produit et le
+prof n’est autre que Mike Manzoori, le filmer de la <a href='https://www.youtube.com/watch?v=F3pGLX82i38'
+target=_blank>Emerica Stay Gold</a>, excusez du peu.</li></ul>
+<p>Cet article vous a plu? N’hésitez pas à partager vos vidéos persos dans les commentaires.</p>
+",
+
+date: DateTime.new(2014, 11, 20),
+author: "Baptiste Brassart",
+author_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/bbrassart_avatar.jpg",
+tags: ["gopro", "action cam", "skateboarding", "video"]
 )
 
 

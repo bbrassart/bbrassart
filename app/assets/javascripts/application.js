@@ -19,6 +19,7 @@ $(document).on('ready page:load', function () {
   var listenToGithub = Object.create(github);
   listenToGithub.setInitialListeners();
   var listenToBlog = Object.create(blog);
+  listenToBlog.buildFirstPost();
   listenToBlog.setInitialListeners();
 
   $('#showInstagram').hide();

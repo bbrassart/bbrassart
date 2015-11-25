@@ -1,6 +1,7 @@
 class Blog
   include Mongoid::Document
   field :title, type: String
+  field :intro, type: String
   field :text, type: String
   field :author, type: String
   field :author_logo, type: String

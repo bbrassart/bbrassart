@@ -12,6 +12,7 @@ var github = {
       else {
         $('#showGithub').html("");
         $('#triggerGithub').text(`See my profile`);
+        window.location.href="#github";
       }
       self.trigger = !self.trigger;
     });
@@ -20,7 +21,6 @@ var github = {
 
   processAjax: function (response) {
     var html = ``;
-    debugger;
     html += `<p>Currently working on ${response.length} projects<p><br><table class="pure-table">
     <thead>
         <tr>
@@ -42,5 +42,6 @@ var github = {
     $('#showGithub').html("");
     $('#showGithub').append(html);
     $('#triggerGithub').text(`Make me smaller`);
+    window.location.href="#github";
   }
 }
