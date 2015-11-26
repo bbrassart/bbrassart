@@ -21,8 +21,10 @@ $(document).on('ready page:load', function () {
   var listenToBlog = Object.create(blog);
   listenToBlog.buildFirstPost();
   listenToBlog.setInitialListeners();
+  var listenToReduceCv = Object.create(reduceCv);
+  listenToReduceCv.setInitialListeners();
 
-  $('#showInstagram').hide();
+
   var listenToSocialMedia = Object.create(socialMedia);
   listenToSocialMedia.setInitialListeners();
 

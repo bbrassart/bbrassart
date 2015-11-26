@@ -19,10 +19,33 @@
   color: white;
 }
 
+.repo-link {
+  color: #6FBEF3;
+}
+
+.github--projects__text {
+  margin: 1em 0 1em !important;
+}
+
+
 .first--image__post {
   height: 150px;
   padding: 20px 20px 0 0;
   float: left;
+}
+
+th {
+  color: white;
+  font-weight: lighter;
+}
+
+thead {
+  background-color: #1f8dd6 !important;
+}
+
+.button-xsmall {
+  font-size: 45%;
+  margin-bottom: 3.1px;
 }
 
 .button-success,
@@ -32,6 +55,10 @@
     color: white;
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.media--sidebar {
+  padding: 10px;
 }
 
 .button-success {

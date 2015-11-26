@@ -29,6 +29,16 @@ var cv = {
       html += `<br><br>`
     });
     $('#showCv').html("");
+    $('#reduceCv').removeClass('hidden');
     $('#showCv').append(html);
+  }
+}
+
+var reduceCv = {
+  setInitialListeners: function() {
+    $('#reduceCv').on('click', function() {
+      $('#showCv').html('');
+      $(this).addClass('hidden');
+    })
   }
 }
