@@ -50,10 +50,6 @@ var github = {
     return `</tbody></table>`
   },
 
-  buildHeaderHiddenChart: function() {
-    return `<table id="my-table"><thead><tr>`
-  },
-
   createHashOfTechs: function(response) {
     var techs = {};
     response.forEach(function(project) {
@@ -66,23 +62,6 @@ var github = {
     return techs;
   },
 
-  buildBodyHiddenForm: function(techs) {
-    var html = "";
-    for (var property in techs) {
-      if ( techs.hasOwnProperty(property) ) {
-        html += `<th>${property}</th>`
-      };
-    };
-    html += `</tr></thead><tbody><tr>`;
-    for (var property in techs) {
-      if ( techs.hasOwnProperty(property) ) {
-        html += `<td>${techs[property]}</td>`
-      };
-    };
-    html += `</tr></tbody></table>`;
-    return html;
-  },
-
   processAjax: function (response) {
     var techs = this.createHashOfTechs(response);
     var self = this;
@@ -93,28 +72,11 @@ var github = {
       html += self.buildChartRow(project);
     });
     html += this.buildCloseTable();
-    html += this.buildHeaderHiddenChart();
-    html += this.buildBodyHiddenForm(techs);
 
     $('#showGithub').html("");
     $('#showGithub').append(html);
 
     $('#triggerGithub').text(`Make me smaller`);
-
-    $('#my-table').chartify('bar', {
-      chartWidth:     496,
-      marginTop:      30,
-      marginBottom:   30,
-      marginRight:   30,
-      textSize:       10,
-      textColor:      "666666",
-      barWidth:       20,
-      barSpacing:     4,
-      groupSpacing:   10,
-      showLabels: true,
-      showLegend: false,
-      colors: ["6FBEF3"]
-    });
 
     window.location.href="#github";
   }
