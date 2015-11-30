@@ -5,9 +5,10 @@ development:
     default:
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
-      uri: mongodb://heroku_c2fr6909:8idon4b9l84bqcik0cm0oj126m@ds059694.mongolab.com:59694/heroku_c2fr6909
+      uri: <%= ENV['MONGOLAB_URI'] %>
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
+
 
       options:
         # Change the default write concern. (default = { w: 1 })
