@@ -11,6 +11,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'faker'
 gem "font-awesome-rails"
+group :production do
+  gem 'rails_12factor'
+end
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'mongoid', '~> 4'
