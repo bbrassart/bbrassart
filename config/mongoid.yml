@@ -1,27 +1,15 @@
 production:
   clients:
     default:
-     uri: mongodb://heroku_c2fr6909:8idon4b9l84bqcik0cm0oj126m@ds059694.mongolab.com:59694/heroku_c2fr6909
-     hosts:
-       - baptistebrassart.herokuapp.com:27017
+     # The standard MongoDB connection URI allows for easy
+     # replica set connection setup.
+     # Use environment variables or a config file to keep your
+     # credentials safe e.g. <%= ENV['MONGOLAB_URI'] %>.
+     uri: <%= ENV['MONGOLAB_URI'] %>
+
      options:
+       # The default timeout is 5, which is the time in seconds
+       # for a connection to time out.
+       # We recommend 15 because it allows for plenty of time
+       # in most operating environments.
        connect_timeout: 15
-
-development:
-  clients:
-    default:
-      database: bbrassart_development
-      hosts:
-        - localhost:27017
-      options:
-
-test:
-  clients:
-    default:
-      database: bbrassart_test
-      hosts:
-        - localhost:27017
-      options:
-        read:
-          mode: :primary
-        max_pool_size: 1
