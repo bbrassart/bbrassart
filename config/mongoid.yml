@@ -14,7 +14,7 @@ development:
       hosts:
         - localhost:27017
       options:
-  options:
+
 test:
   clients:
     default:
