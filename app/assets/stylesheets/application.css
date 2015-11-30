@@ -12,13 +12,20 @@
  *
  *= require_tree .
  *= require_self
- *= require font-awesome
+//= require font-awesome
+//= require font-awesome.min
+//= require grids-responsive-min
+//= require pure-min
+
+
  */
 
 #showGithub {
   padding-top: 20px;
   color: white;
 }
+
+
 
 .contact--form {
   padding-top: 45px;
