@@ -12,11 +12,20 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
 
 #showGithub {
   padding-top: 20px;
   color: white;
+}
+
+.contact--form {
+  padding-top: 45px;
+}
+
+.pure-form input[type] {
+  margin-top: 0.5em;
 }
 
 .repo-link {
@@ -55,6 +64,18 @@ thead {
     color: white;
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.xp-col {
+  padding: 0 8%;
+}
+
+.xp-logo {
+  vertical-align: middle;
+}
+
+#showCv {
+  margin-top: -35px;
 }
 
 .media--sidebar {

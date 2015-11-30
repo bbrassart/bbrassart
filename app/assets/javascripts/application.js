@@ -24,7 +24,6 @@ $(document).on('ready page:load', function () {
   var listenToReduceCv = Object.create(reduceCv);
   listenToReduceCv.setInitialListeners();
 
-
   var listenToSocialMedia = Object.create(socialMedia);
   listenToSocialMedia.setInitialListeners();
 

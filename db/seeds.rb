@@ -332,12 +332,12 @@ title: "Teaching assistant",
 tags: ["code", "javascript", "ruby on rails", "html", "css"],
 company_name: "IronHack",
 location: "Barcelona",
-description: "After graduating from IronHack, I'm now working as a teaching
-  assistant for the current web development bootcamp in Barcelona.
-  - Supporting the students with their learning activities, making sure all of them
-  understand the most important concepts of programming.<br>
-  - Help organizing classes and workshops, working closely with the teachers and
-  public speakers.",
+description: "<ul><li>After graduating from IronHack, I'm now working as a teaching
+  assistant for the current web development bootcamp in Barcelona.</li>
+  <li>Supporting the students with their learning activities, making sure all of them
+  understand the most important concepts of programming.</li>
+  <li>Help organizing classes and workshops, working closely with the teachers and
+  public speakers.</li></ul>",
 company_logo: "https://fdemadrid.files.wordpress.com/2013/10/ironhack_logonegro.png"
 )
 
@@ -348,111 +348,44 @@ first.experiences.create(
   title: "Student",
   company_name: "IronHack",
   location: "Barcelona",
-  description: "<p>- Intensive programming courses for developers.
-  - Work with different technologies including Ruby on Rails, Javascript, HTML5, CSS3, Git
-  - Focusing on clean code principles, design patterns and test driven development.
-  - Using agile development which teaches us the best way to build and deliver things done
-  in an easy and agile way, from testing to deployment.</p>",
+  description: "<ul><li>Intensive programming courses for developers.</li>
+  <li>Work with different technologies including Ruby on Rails, Javascript, HTML5, CSS3, Git.</li>
+  <li>Focusing on clean code principles, design patterns and test driven development.</li>
+  <li>Using agile development which teaches us the best way to build and deliver things done
+  in an easy and agile way, from testing to deployment.</li></ul>",
   company_logo: "https://fdemadrid.files.wordpress.com/2013/10/ironhack_logonegro.png"
 )
 
+softonic = {
+  starting_date: DateTime.new(2010, 12, 1),
+  ending_date: DateTime.new(2014, 12, 1),
+  tags: ["editorial", "web", "microsoft", "social media", "content"],
+  title: "Web journalist / Social media manager",
+  company_name: "Softonic",
+  location: "Barcelona",
+  description: "<ul><li>Writing news and long-form articles about software and technology in
+  a fast-paced international environment.</li>
+  <li>Supervising, with the Microsoft specialists team, Softonic editorial coverage for
+  Microsoft major events (e.g. launch of Windows 8).</li>
+  <li>Contacting app founders and VPs for exclusive content
+  (e.g. <a href='http://bit.ly/MarcJalabert' target=_blank>Microsoft</a> and
+  <a href='http://bit.ly/FredericDellaFaille' target=_blank>Frontback</a>).</li>
+  <li>Monitoring content performance using Google Analytics and many other KPIs.</li>
+  <li>Writing new software / apps reviews, curating the existing database.</li>
+  <li>Managing Softonic France’s social media accounts.</li></ul>",
+  company_logo: "https://upload.wikimedia.org/wikipedia/en/a/ad/Softonic.com_logo.png"
+}
+
 second = Year.create(title: 2014)
-second.experiences.create(
-  starting_date: DateTime.new(2010, 12, 1),
-  ending_date: DateTime.new(2014, 12, 1),
-  tags: ["editorial", "web", "microsoft", "social media", "content"],
-  title: "Web journalist / Social media manager",
-  company_name: "Softonic",
-  location: "Barcelona",
-  description: "<p>- Writing news and long-form articles about software and technology in a fast-paced international environment
-- Supervising, with the Microsoft specialists team, Softonic editorial coverage for Microsoft major events (e.g. launch of Windows 8)
-- Contacting app founders and VPs for exclusive content (e.g. Microsoft http://bit.ly/MarcJalabert and Frontback http://bit.ly/FredericDellaFaille)
-- Monitoring content performance using Google Analytics and many other KPIs
-- Writing new software / apps reviews, curating the existing database
-- Managing Softonic France’s social media accounts",
-  company_logo: "https://upload.wikimedia.org/wikipedia/en/a/ad/Softonic.com_logo.png"
-)
+second.experiences.create(softonic)
 third = Year.create(title: 2013)
-third.experiences.create(
-  starting_date: DateTime.new(2010, 12, 1),
-  ending_date: DateTime.new(2014, 12, 1),
-  tags: ["editorial", "web", "microsoft", "social media", "content"],
-  title: "Web journalist / Social media manager",
-  company_name: "Softonic",
-  location: "Barcelona",
-  description: "<p>- Writing news and long-form articles about software and technology in a fast-paced international environment
-- Supervising, with the Microsoft specialists team, Softonic editorial coverage for Microsoft major events (e.g. launch of Windows 8)
-- Contacting app founders and VPs for exclusive content (e.g. Microsoft http://bit.ly/MarcJalabert and Frontback http://bit.ly/FredericDellaFaille)
-- Monitoring content performance using Google Analytics and many other KPIs
-- Writing new software / apps reviews, curating the existing database
-- Managing Softonic France’s social media accounts",
-  company_logo: "https://upload.wikimedia.org/wikipedia/en/a/ad/Softonic.com_logo.png"
-)
+third.experiences.create(softonic)
 fourth = Year.create(title: 2012)
-fourth.experiences.create(
-  starting_date: DateTime.new(2010, 12, 1),
-  ending_date: DateTime.new(2014, 12, 1),
-  tags: ["editorial", "web", "microsoft", "social media", "content"],
-  title: "Web journalist / Social media manager",
-  company_name: "Softonic",
-  location: "Barcelona",
-  description: "<p>- Writing news and long-form articles about software and technology in a fast-paced international environment
-- Supervising, with the Microsoft specialists team, Softonic editorial coverage for Microsoft major events (e.g. launch of Windows 8)
-- Contacting app founders and VPs for exclusive content (e.g. Microsoft http://bit.ly/MarcJalabert and Frontback http://bit.ly/FredericDellaFaille)
-- Monitoring content performance using Google Analytics and many other KPIs
-- Writing new software / apps reviews, curating the existing database
-- Managing Softonic France’s social media accounts",
-  company_logo: "https://upload.wikimedia.org/wikipedia/en/a/ad/Softonic.com_logo.png"
-)
+fourth.experiences.create(softonic)
 fifth = Year.create(title: 2011)
-fifth.experiences.create(
-  starting_date: DateTime.new(2010, 12, 1),
-  ending_date: DateTime.new(2014, 12, 1),
-  tags: ["editorial", "web", "microsoft", "social media", "content"],
-  title: "Web journalist / Social media manager",
-  company_name: "Softonic",
-  location: "Barcelona",
-  description: "<p>- Writing news and long-form articles about software and technology in a fast-paced international environment
-- Supervising, with the Microsoft specialists team, Softonic editorial coverage for Microsoft major events (e.g. launch of Windows 8)
-- Contacting app founders and VPs for exclusive content (e.g. Microsoft http://bit.ly/MarcJalabert and Frontback http://bit.ly/FredericDellaFaille)
-- Monitoring content performance using Google Analytics and many other KPIs
-- Writing new software / apps reviews, curating the existing database
-- Managing Softonic France’s social media accounts",
-  company_logo: "https://upload.wikimedia.org/wikipedia/en/a/ad/Softonic.com_logo.png"
-)
-
+fifth.experiences.create(softonic)
 sixth = Year.create(title: 2010)
-sixth.experiences.create(
-  starting_date: DateTime.new(2010, 12, 1),
-  ending_date: DateTime.new(2014, 12, 1),
-  tags: ["editorial", "web", "microsoft", "social media", "content"],
-  title: "Web journalist / Social media manager",
-  company_name: "Softonic",
-  location: "Barcelona",
-  description: "<p>- Writing news and long-form articles about software and technology in a fast-paced international environment
-- Supervising, with the Microsoft specialists team, Softonic editorial coverage for Microsoft major events (e.g. launch of Windows 8)
-- Contacting app founders and VPs for exclusive content (e.g. Microsoft http://bit.ly/MarcJalabert and Frontback http://bit.ly/FredericDellaFaille)
-- Monitoring content performance using Google Analytics and many other KPIs
-- Writing new software / apps reviews, curating the existing database
-- Managing Softonic France’s social media accounts",
-  company_logo: "https://upload.wikimedia.org/wikipedia/en/a/ad/Softonic.com_logo.png"
-)
-
-sixth.experiences.create(
-  starting_date: DateTime.new(2010, 12, 1),
-  ending_date: DateTime.new(2014, 12, 1),
-  tags: ["editorial", "web", "microsoft", "social media", "content"],
-  title: "Web journalist / Social media manager",
-  company_name: "Softonic",
-  location: "Barcelona",
-  description: "<p>- Writing news and long-form articles about software and technology in a fast-paced international environment
-- Supervising, with the Microsoft specialists team, Softonic editorial coverage for Microsoft major events (e.g. launch of Windows 8)
-- Contacting app founders and VPs for exclusive content (e.g. Microsoft http://bit.ly/MarcJalabert and Frontback http://bit.ly/FredericDellaFaille)
-- Monitoring content performance using Google Analytics and many other KPIs
-- Writing new software / apps reviews, curating the existing database
-- Managing Softonic France’s social media accounts",
-  company_logo: "https://upload.wikimedia.org/wikipedia/en/a/ad/Softonic.com_logo.png"
-)
+sixth.experiences.create(softonic)
 
 
 puts "DB filled"
