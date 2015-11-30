@@ -181,6 +181,7 @@ DEPENDENCIES
   font-awesome-rails
   jbuilder (~> 2.0)
   jquery-rails
+  mongo
   mongoid (~> 5.0.0)
   rails (= 4.2.3)
   rails_12factor
