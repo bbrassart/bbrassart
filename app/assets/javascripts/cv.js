@@ -44,7 +44,6 @@ var cv = {
 
   buildBody: function(data) {
     var html = `${data.description}`;
-    debugger;
     html += `</div>`;
     return html;
   },

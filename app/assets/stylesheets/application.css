@@ -19,6 +19,13 @@
   color: white;
 }
 
+#showCV p, #showCV li {
+  color: white;
+}
+
+
+
+
 .contact--form {
   padding-top: 45px;
 }
