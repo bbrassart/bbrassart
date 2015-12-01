@@ -14,10 +14,10 @@ var github = {
         })
       }
       else {
+        setTimeout(function(){ $('#showGithub').html(""); }, 400);
         $('#showGithub').fadeOut("slow");
-        $('#showGithub').html("");
         $("#limitGithub").animate({
-          height: $("#showGithub").height()
+          height: 0
         },"slow");
         $('#triggerGithub').text(`See my profile`);
         window.location.href="#github";

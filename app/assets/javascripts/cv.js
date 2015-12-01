@@ -32,13 +32,17 @@ var cv = {
       html += self.buildTags(data.tags);
       html += `<br><br>`
     });
-    $('#showCv').html("");
-    $('#reduceCv').removeClass('hidden');
-    $('#showCv').append(html);
-    $('#showCv').fadeIn("slow");
-    $("#limitCv").animate({
-      height: $("#showCv").height()
-    },"slow");
+    $('#showCv').fadeOut("slow");
+    setTimeout(function(){
+      $('#showCv').html("");
+      $('#reduceCv').removeClass('hidden');
+      $('#showCv').append(html);
+      $('#showCv').fadeIn("slow");
+      $("#limitCv").animate({
+        height: $("#showCv").height()
+      },"slow");
+     }, 400);
+
   },
 
   buildMetaBody: function(data) {
@@ -80,10 +84,10 @@ var cv = {
 var reduceCv = {
   setInitialListeners: function() {
     $('#reduceCv').on('click', function() {
+      setTimeout(function(){ $('#showCv').html(""); }, 400);
       $('#showCv').fadeOut("slow");
-      $('#showCv').html("");
       $("#limitCv").animate({
-        height: $("#showCv").height()
+        height: 0
       },"slow");
       $(this).addClass('hidden');
     })

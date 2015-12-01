@@ -133,7 +133,12 @@ var blog = {
     html += this.buildIntro(data);
     html += this.buildText(data);
     html += this.buildButtons(data);
-    $('#showBlog').html("");
-    $('#showBlog').append(html);
+
+    $('#showBlog').fadeOut("slow");
+    setTimeout(function(){
+      $('#showBlog').html("");
+      $('#showBlog').append(html);
+      $('#showBlog').fadeIn("slow");;
+     }, 400);
   }
 }
