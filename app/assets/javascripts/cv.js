@@ -35,6 +35,10 @@ var cv = {
     $('#showCv').html("");
     $('#reduceCv').removeClass('hidden');
     $('#showCv').append(html);
+    $('#showCv').fadeIn("slow");
+    $("#limitCv").animate({
+      height: $("#showCv").height()
+    },"slow");
   },
 
   buildMetaBody: function(data) {
@@ -76,7 +80,11 @@ var cv = {
 var reduceCv = {
   setInitialListeners: function() {
     $('#reduceCv').on('click', function() {
-      $('#showCv').html('');
+      $('#showCv').fadeOut("slow");
+      $('#showCv').html("");
+      $("#limitCv").animate({
+        height: $("#showCv").height()
+      },"slow");
       $(this).addClass('hidden');
     })
   }

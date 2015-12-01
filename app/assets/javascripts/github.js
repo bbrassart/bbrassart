@@ -14,7 +14,11 @@ var github = {
         })
       }
       else {
+        $('#showGithub').fadeOut("slow");
         $('#showGithub').html("");
+        $("#limitGithub").animate({
+          height: $("#showGithub").height()
+        },"slow");
         $('#triggerGithub').text(`See my profile`);
         window.location.href="#github";
       }
@@ -75,6 +79,10 @@ var github = {
 
     $('#showGithub').html("");
     $('#showGithub').append(html);
+    $('#showGithub').fadeIn("slow");
+    $("#limitGithub").animate({
+      height: $("#showGithub").height()
+    },"slow");
 
     $('#triggerGithub').text(`Make me smaller`);
 

@@ -19,6 +19,12 @@
   color: white;
 }
 
+#limit {
+  position: relative;
+  overflow: hidden;
+}
+
+
 @media (min-width: 48em) {
   .pure-u-lg-2-5 {
     width: 40%;
@@ -30,15 +36,13 @@
 }
 
 
-#showCV p, #showCV li {
+#showCv p, #showCv li {
   color: white;
 }
 
 #showBlog {
   padding-bottom: 1.3em;
 }
-
-
 
 
 .contact--form {
@@ -96,7 +100,7 @@ thead {
 }
 
 #showCv {
-  margin-top: -35px;
+  margin-top: -15px;
 }
 
 .media--sidebar {
