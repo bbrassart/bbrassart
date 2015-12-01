@@ -38,24 +38,24 @@ var blog = {
 
     $('body').on('click', '#triggerRevealText', function() {
       $('#showBlog').fadeOut("slow");
+      window.location.href="#blog";
       setTimeout(function(){
         $('#showBlog').fadeIn("slow");
         $('#revealText').removeClass('hidden');
         $('#makeMeSmallerDiv').removeClass('hidden');
         $('#triggerRevealText').addClass('hidden');
-        window.location.href="#blog";
        }, 400);
 
     });
 
     $('body').on('click', '#makeSmallerText', function() {
       $('#showBlog').fadeOut("slow");
+      window.location.href="#blog";
       setTimeout(function(){
         $('#showBlog').fadeIn("slow");
         $('#revealText').addClass('hidden');
         $('#makeMeSmallerDiv').addClass('hidden');
         $('#triggerRevealText').removeClass('hidden');
-        window.location.href="#blog";
        }, 400);
 
     });
