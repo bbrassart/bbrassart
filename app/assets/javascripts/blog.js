@@ -37,17 +37,26 @@ var blog = {
     });
 
     $('body').on('click', '#triggerRevealText', function() {
-      $('#revealText').removeClass('hidden');
-      $('#makeMeSmallerDiv').removeClass('hidden');
-      $('#triggerRevealText').addClass('hidden');
-      window.location.href="#blog";
+      $('#showBlog').fadeOut("slow");
+      setTimeout(function(){
+        $('#showBlog').fadeIn("slow");
+        $('#revealText').removeClass('hidden');
+        $('#makeMeSmallerDiv').removeClass('hidden');
+        $('#triggerRevealText').addClass('hidden');
+        window.location.href="#blog";
+       }, 400);
+
     });
 
     $('body').on('click', '#makeSmallerText', function() {
-      window.location.href="#blog";
-      $('#revealText').addClass('hidden');
-      $('#makeMeSmallerDiv').addClass('hidden');
-      $('#triggerRevealText').removeClass('hidden');
+      $('#showBlog').fadeOut("slow");
+      setTimeout(function(){
+        $('#showBlog').fadeIn("slow");
+        $('#revealText').addClass('hidden');
+        $('#makeMeSmallerDiv').addClass('hidden');
+        $('#triggerRevealText').removeClass('hidden');
+        window.location.href="#blog";
+       }, 400);
 
     });
   },
