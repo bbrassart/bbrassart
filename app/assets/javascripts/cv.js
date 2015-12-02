@@ -72,8 +72,9 @@ var cv = {
   buildTags: function(tags) {
     var tagColors = ["design", "pure", "js", "yui"];
     var html = "<br><br>";
-    tags.forEach(function(tag) {
-      var color = tagColors[Math.floor(Math.random() * tagColors.length)];
+    tags.forEach(function(tag, index) {
+      debugger;
+      var color = tagColors[index];
       html += `<span class="post-category post-category-${color}">${tag}</span>`
     })
     html += `</div>`

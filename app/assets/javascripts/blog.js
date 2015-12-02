@@ -78,9 +78,9 @@ var blog = {
     By <a class="post-author" href="#">${data.author}</a> under `
   },
 
-  buildTag: function(tag) {
+  buildTag: function(tag, index) {
     var tagColors = ["design", "pure", "js", "yui"];
-    var color = tagColors[Math.floor(Math.random() * tagColors.length)];
+    var color = tagColors[index];
     return `<a class="post-category post-category-${color}">${tag}</a>`
   },
 
@@ -139,8 +139,8 @@ var blog = {
     html += this.buildHeader(data);
     html += this.buildDate(data);
     html += this.buildPostTitle(data);
-    data.tags.forEach(function(tag) {
-      html += self.buildTag(tag);
+    data.tags.forEach(function(tag, index) {
+      html += self.buildTag(tag, index);
     });
     html += this.buildIntro(data);
     html += this.buildText(data);

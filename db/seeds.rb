@@ -39,7 +39,7 @@ date: DateTime.new(2015, 6, 8),
 author: "Baptiste Brassart",
 image: "https://s3-us-west-2.amazonaws.com/bbrassart/github_code.jpg",
 author_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/bbrassart_avatar.jpg",
-tags: ["development", "tech", "code"]
+tags: ["development", "tech", "geek", "code"]
 )
 
 
