@@ -74,7 +74,7 @@ var cv = {
     var html = "<br><br>";
     tags.forEach(function(tag) {
       var color = tagColors[Math.floor(Math.random() * tagColors.length)];
-      html += `<a class="post-category post-category-${color}">${tag}</a>`
+      html += `<span class="post-category post-category-${color}">${tag}</span>`
     })
     html += `</div>`
     return html;

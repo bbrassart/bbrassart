@@ -18,6 +18,12 @@
   color: white;
 }
 
+.pure-g {
+  letter-spacing: 0;
+}
+
+
+
 #limit {
   position: relative;
   overflow: hidden;
