@@ -25,7 +25,6 @@ var blog = {
       var index = this.dataset["hook"];
       var currentIndex = parseInt(index) - 1;
       self.launchAjax(currentIndex);
-      window.location.href="#blog";
     });
 
 
@@ -33,32 +32,37 @@ var blog = {
       var index = this.dataset["hook"];
       var currentIndex = parseInt(index) + 1;
       self.launchAjax(currentIndex);
-      window.location.href="#blog";
     });
 
     $('body').on('click', '#triggerRevealText', function() {
       $('#showBlog').fadeOut("slow");
-      window.location.href="#blog";
-      setTimeout(function(){
-        $('#showBlog').fadeIn("slow");
-        $('#revealText').removeClass('hidden');
-        $('#makeMeSmallerDiv').removeClass('hidden');
-        $('#triggerRevealText').addClass('hidden');
-       }, 400);
-
+      self.showMoreDelayedFadeIn();
     });
 
     $('body').on('click', '#makeSmallerText', function() {
       $('#showBlog').fadeOut("slow");
-      window.location.href="#blog";
-      setTimeout(function(){
-        $('#showBlog').fadeIn("slow");
-        $('#revealText').addClass('hidden');
-        $('#makeMeSmallerDiv').addClass('hidden');
-        $('#triggerRevealText').removeClass('hidden');
-       }, 400);
-
+      self.smallerDelayedFadeIn();
     });
+  },
+
+  showMoreDelayedFadeIn: function() {
+    setTimeout(function(){
+      $('#showBlog').fadeIn("slow");
+      $('#revealText').removeClass('hidden');
+      $('#makeMeSmallerDiv').removeClass('hidden');
+      $('#triggerRevealText').addClass('hidden');
+      window.location.href="#blog";
+     }, 400);
+  },
+
+  smallerDelayedFadeIn: function() {
+    setTimeout(function(){
+      $('#showBlog').fadeIn("slow");
+      $('#revealText').addClass('hidden');
+      $('#makeMeSmallerDiv').addClass('hidden');
+      $('#triggerRevealText').removeClass('hidden');
+      window.location.href="#blog";
+     }, 400);
   },
 
   buildHeader: function(data) {
@@ -101,31 +105,31 @@ var blog = {
 
   buildText: function(data) {
     return `<div id="revealText" class="hidden">${data.text}</div></div>
-    <div id="makeMeSmallerDiv" class="is-center hidden"><button class="pure-button pure-button-primary"
-    id="makeSmallerText">Make me smaller</button></div></section>`
+    <div id="makeMeSmallerDiv" class="is-center hidden"><div class="pure-u-1"><button class="pure-button pure-button-primary"
+    id="makeSmallerText">Make me smaller</button></div></section></div>`
   },
 
   buildButtons: function(data) {
     if (data.currentIndex == 3) {
-      return `<div class="is-center">
+      return `<div class="pure-u-1"><div class="is-center">
       <button class="pure-button pure-button-primary" id="triggerPreviousBlog"
       data-hook="${data.currentIndex}"><i class="fa fa-step-backward"></i>
       Previous post</button>
-      </div>`
+      </div></div>`
     } else if (data.currentIndex == 0) {
-      return `<div class="is-center">
+      return `<div class="pure-u-1"><div class="is-center">
       <button class="pure-button pure-button-primary" id="triggerNextBlog"
       data-hook="${data.currentIndex}">
       Next post <i class="fa fa-step-forward"></i></button>
-      </div>`
+      </div></div>`
     } else {
-      return `<div class="is-center">
+      return `<div class="pure-u-1"><div class="is-center">
       <button class="pure-button pure-button-primary" id="triggerPreviousBlog"
       data-hook="${data.currentIndex}"><i class="fa fa-step-backward"></i>
       Previous post</button>
       <button class="pure-button pure-button-primary" id="triggerNextBlog"
       data-hook="${data.currentIndex}">
-      Next post <i class="fa fa-step-forward"></i></button></div>`
+      Next post <i class="fa fa-step-forward"></i></button></div></div>`
     }
   },
 
@@ -138,16 +142,23 @@ var blog = {
     data.tags.forEach(function(tag) {
       html += self.buildTag(tag);
     });
-
     html += this.buildIntro(data);
     html += this.buildText(data);
     html += this.buildButtons(data);
 
     $('#showBlog').fadeOut("slow");
+    self.showBlogDelayedFadeIn(html);
+    self.counter += 1;
+  },
+
+  showBlogDelayedFadeIn: function(html) {
     setTimeout(function(){
       $('#showBlog').html("");
       $('#showBlog').append(html);
-      $('#showBlog').fadeIn("slow");;
+      $('#showBlog').fadeIn("slow");
+      if (!self.counter === 0) {
+        window.location.href="#blog";
+      }
      }, 400);
   }
 }

@@ -32,7 +32,7 @@ var github = {
   },
 
   buildMainTableHeader: function() {
-    return `<table class="pure-table">
+    return `<table align="center" class="pure-table">
     <thead>
         <tr>
             <th class='is-center'>Name</th>
