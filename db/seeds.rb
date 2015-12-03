@@ -336,7 +336,7 @@ description: "<ul><li>After graduating from IronHack, I'm now working as a teach
   understand the most important concepts of programming.</li>
   <li>Help organizing classes and workshops, working closely with the teachers and
   public speakers.</li></ul>",
-company_logo: "https://fdemadrid.files.wordpress.com/2013/10/ironhack_logonegro.png"
+company_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/ironhack.png"
 )
 
 first.experiences.create(
@@ -351,7 +351,7 @@ first.experiences.create(
   <li>Focusing on clean code principles, design patterns and test driven development.</li>
   <li>Using agile development which teaches us the best way to build and deliver things done
   in an easy and agile way, from testing to deployment.</li></ul>",
-  company_logo: "https://fdemadrid.files.wordpress.com/2013/10/ironhack_logonegro.png"
+  company_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/ironhack.png"
 )
 
 softonic = {
@@ -371,7 +371,7 @@ softonic = {
   <li>Monitoring content performance using Google Analytics and many other KPIs.</li>
   <li>Writing new software / apps reviews, curating the existing database.</li>
   <li>Managing Softonic France’s social media accounts.</li></ul>",
-  company_logo: "https://upload.wikimedia.org/wikipedia/en/a/ad/Softonic.com_logo.png"
+  company_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/softonic.png"
 }
 
 second = Year.create(title: 2014)
