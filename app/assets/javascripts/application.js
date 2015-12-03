@@ -16,7 +16,6 @@
 //= require_tree .
 
 $(document).on('ready page:load', function () {
-  $(".button-collapse").sideNav();
   var listenToGithub = Object.create(github);
   listenToGithub.setInitialListeners();
   var listenToBlog = Object.create(blog);
