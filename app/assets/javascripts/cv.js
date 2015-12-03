@@ -6,7 +6,6 @@ var cv = {
     var self = this;
 
     $('.triggerCv').on('click',  function() {
-      debugger;
       year = this.dataset["hook"];
       self.launchAjax(year);
     });
