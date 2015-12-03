@@ -50,6 +50,10 @@
   padding-top: 45px;
 }
 
+.pure-menu-horizontal {
+  white-space: normal;
+}
+
 .pure-form input[type] {
   margin-top: 0.5em;
 }
