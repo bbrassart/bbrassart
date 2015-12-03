@@ -4,8 +4,10 @@ var cv = {
 
   setInitialListeners: function() {
     var self = this;
+
     $('.triggerCv').on('click',  function() {
-      year = event.currentTarget.dataset["hook"];
+      debugger;
+      year = this.dataset["hook"];
       self.launchAjax(year);
     });
   },
@@ -73,7 +75,6 @@ var cv = {
     var tagColors = ["design", "pure", "js", "yui"];
     var html = "<br><br>";
     tags.forEach(function(tag, index) {
-      debugger;
       var color = tagColors[index];
       html += `<span class="post-category post-category-${color}">${tag}</span>`
     })
