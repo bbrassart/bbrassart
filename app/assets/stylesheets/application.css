@@ -35,6 +35,19 @@
   .pure-u-lg-3-5 {
     width: 59%;
   }
+  .pure-u-lg-1-2 {
+    width: 49%;
+  }
+
+  .pure-u-md-3-5 {
+    width: 59%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact--form {
+    padding-top: 0 !important;
+  }
 }
 
 #showCv p, #showCv li {
@@ -56,14 +69,6 @@
 
 .pure-form input[type] {
   margin-top: 0.5em;
-}
-
-.pure-u-lg-1-2 {
-  width: 49%;
-}
-
-.pure-u-md-3-5 {
-  width: 59%;
 }
 
 .repo-link {
