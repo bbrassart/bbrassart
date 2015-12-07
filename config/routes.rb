@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   end
   #admin routes
   get 'blogs/add' => 'users#add_blog'
+  get '/blog-unchained/:url' => 'features#show'
 end

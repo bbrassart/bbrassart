@@ -18,6 +18,15 @@
   color: white;
 }
 
+#makeSmallerText {
+  margin-right: 0.15em;
+}
+
+#commentArticle {
+  margin-left: 0.15em;
+}
+
+
 div#limitGithub {
   margin-top: -3em;
   margin-bottom: 1.9em;

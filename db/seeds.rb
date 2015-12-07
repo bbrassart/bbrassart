@@ -7,7 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 puts "Empty DB"
 
+Blog.destroy_all
+
 Blog.create(
+url: "2015-06-08-developers-developers-developers",
 title: "Developers, developers, developers…",
 currentIndex: 3,
 image_caption: "Code in GitHub",
@@ -45,6 +48,7 @@ tags: ["development", "tech", "geek", "code"]
 
 
 Blog.create(
+url: "2014-12-12-meilleures-applis-gif-iphone",
 title: "Du GIF en barre: les meilleures applis iPhone",
 currentIndex: 2,
 image_caption: "GIF up your life",
@@ -166,6 +170,7 @@ tags: ["iphone", "gif", "applis", "ios"]
 )
 
 Blog.create(
+url: "2014-05-12-cadeaux-noel-geek",
 title: "Idées cadeaux: les objets geek pour Noël",
 currentIndex: 1,
 image_caption: "Cadeaux de Noël geek",
@@ -237,6 +242,7 @@ tags: ["noel", "cadeaux", "geek", "fêtes"]
 
 
 Blog.create(
+url: "2014-11-20-gopro-comparatif",
 title: "Comparatif GoPro: quelle caméra choisir?",
 currentIndex: 0,
 image_caption: "Publicité GoPro",
@@ -319,7 +325,7 @@ author_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/bbrassart_avatar.jpg"
 tags: ["gopro", "action cam", "skateboarding", "video"]
 )
 
-
+Experience.destroy_all
 Year.destroy_all
 first = Year.create(title: 2015)
 

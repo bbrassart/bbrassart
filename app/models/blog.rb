@@ -3,6 +3,7 @@ class Blog
   field :title, type: String
   field :intro, type: String
   field :text, type: String
+  field :url, type: String
   field :author, type: String
   field :author_logo, type: String
   field :date, type: Date
