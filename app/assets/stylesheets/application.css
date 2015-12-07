@@ -18,6 +18,11 @@
   color: white;
 }
 
+div#limitGithub {
+  margin-top: -3em;
+  margin-bottom: 1.9em;
+}
+
 .pure-g {
   letter-spacing: 0;
 }
@@ -47,6 +52,12 @@
 @media (max-width: 500px) {
   .contact--form {
     padding-top: 0 !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  div#limitGithub {
+    margin-top: 1.5em;
   }
 }
 
