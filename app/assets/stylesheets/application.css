@@ -18,6 +18,16 @@
    font-weight: lighter;
  }
 
+ .posts--column {
+   max-width: 1100px;
+   margin: 0 auto !important;
+ }
+
+ .contact--column {
+   max-width: 1300px;
+   margin: 0 auto !important;
+ }
+
  .blog--main__title {
    padding-bottom: 1em;
  }
