@@ -35,5 +35,6 @@ $(document).on('ready page:load', function () {
 
   var listenToCV = Object.create(cv);
   listenToCV.setInitialListeners();
+  twttr.widgets.load();
 
 });
