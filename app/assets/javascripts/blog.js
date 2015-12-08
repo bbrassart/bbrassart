@@ -15,13 +15,16 @@ var blog = {
 
   buildFirstPost: function() {
     var self = this;
-    this.launchAjax(3);
+    if ('#blog'.length != 0) {
+      this.launchAjax(3);
+    }
   },
 
   setInitialListeners: function() {
     var self = this;
 
     $('body').on('click', '#triggerPreviousBlog', function() {
+      $('#revealText').addClass('hidden');
       var index = this.dataset["hook"];
       var currentIndex = parseInt(index) - 1;
       self.launchAjax(currentIndex);
@@ -29,6 +32,7 @@ var blog = {
 
 
     $('body').on('click', '#triggerNextBlog', function() {
+      $('#revealText').addClass('hidden');
       var index = this.dataset["hook"];
       var currentIndex = parseInt(index) + 1;
       self.launchAjax(currentIndex);
@@ -52,6 +56,8 @@ var blog = {
       $('#makeMeSmallerDiv').removeClass('hidden');
       $('#triggerRevealText').addClass('hidden');
       window.location.href="#blog";
+      $('.social--buttons').removeClass("hidden");
+      twttr.widgets.load();
      }, 400);
   },
 
@@ -61,6 +67,8 @@ var blog = {
       $('#revealText').addClass('hidden');
       $('#makeMeSmallerDiv').addClass('hidden');
       $('#triggerRevealText').removeClass('hidden');
+      $('.social--buttons').addClass("hidden");
+      twttr.widgets.load();
       window.location.href="#blog";
      }, 400);
   },
@@ -84,13 +92,21 @@ var blog = {
     return `<a class="post-category post-category-${color}">${tag}</a>`
   },
 
+  buildSocialButtons: function(data) {
+    return `<div class='social--buttons hidden'>
+    <a href='https://twitter.com/share' class='twitter-share-button'{count} data-text='${data.title}' data-url='http://www.bbrassart.me/blog/${data.url}'
+        data-via="bbrassart" data-size="large">Tweet</a>
+        <a href="https://twitter.com/bbrassart" class="twitter-follow-button" data-show-count="false" data-size="large">
+        Follow @bbrassart</a></div>`
+  },
+
   buildIntro: function(data) {
     var self = this;
-    var html = ""
+    var html = "";
     html += `</p></header>
     <img alt="${data.image_caption}" class="first--image__post pure-img-responsive"
     src="${data.image}">${data.intro}`
-    if ( $('#revealText').hasClass('hidden') || self.counter == 0) {
+    if ( $('#revealText').hasClass('hidden') || self.counter == 0 ) {
       html += `<div class="is-center">
       <button class="pure-button pure-button-primary" id="triggerRevealText">Show me more</button>
       </div>`
@@ -104,6 +120,7 @@ var blog = {
   },
 
   buildText: function(data) {
+
     return `<div id="revealText" class="hidden">${data.text}</div></div>
     <div id="makeMeSmallerDiv" class="is-center hidden"><div class="pure-u-1"><div class="is-center"><button class="pure-button pure-button-primary"
     id="makeSmallerText">Make me smaller</button><a href="/blog/${data.url}"><button class="pure-button pure-button-primary">
@@ -143,6 +160,7 @@ var blog = {
     data.tags.forEach(function(tag, index) {
       html += self.buildTag(tag, index);
     });
+    html += this.buildSocialButtons(data);
     html += this.buildIntro(data);
     html += this.buildText(data);
     html += this.buildButtons(data);
