@@ -106,8 +106,8 @@ var blog = {
   buildText: function(data) {
     return `<div id="revealText" class="hidden">${data.text}</div></div>
     <div id="makeMeSmallerDiv" class="is-center hidden"><div class="pure-u-1"><div class="is-center"><button class="pure-button pure-button-primary"
-    id="makeSmallerText">Make me smaller</button><a href="/blog-unchained/${data.url}"><button id="commentArticle" class="pure-button pure-button-primary">
-    Comment the article</button></a></div></div></section></div>`
+    id="makeSmallerText">Make me smaller</button><a href="/blog/${data.url}"><button class="pure-button pure-button-primary">
+    Go to the page</button></a></div></div></section></div>`
   },
 
   buildButtons: function(data) {

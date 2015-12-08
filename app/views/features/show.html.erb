@@ -1,24 +1,36 @@
-<%= render partial: "helpers/blog_navbar" %>
-<div class="content" id="blog">
-  <h2 class="content-head is-center">Blog #Unchained</h2>
+<%= render partial: "helpers/navbar" %>
+
+<div class="content">
+  <h2 class="content-head is-center blog--main__title">Blog #Unchained</h2>
   <div class="posts">
-    <p>Post <%=@post.currentIndex + 1%> out of 4</p>
-      <section class="post">
-        <header class="post-header">
-          <img class="post-avatar" alt="Baptiste's avatar"
-            height="48" width="48" src="<%=@post.author_logo%>">
-            <h2 class="post-title"><%=@post.title%></h2>`
-              <p class="post-meta">
-                <a class="post-author" href="#"><%=@post.author%></a> under
-                <% @post.tags.each_with_index do |tag, index|
-                  tag_colors = ["design", "pure", "js", "yui"]
-                  color = tag_colors[index] %>
-                  <a class='post-category post-category-<%=color%>'><%= tag %></a>
-                <%end%>
-                  </p>
-                </header><img alt="<%=@post.image_caption%>" class="first--image__post pure-img-responsive"
-                  src="<%=@post.image%>"><%=@post.intro.html_safe %>
-                  <p class="post-meta"><%=@post.date%></p>
-                  <%=@post.text.html_safe%>
-                </div>
-              </div>
+    <section class="post">
+      <header class="post-header">
+        <img class="post-avatar" alt="Baptiste's avatar"
+        height="48" width="48" src="<%=@post.author_logo%>">
+        <h2 class="post-title"><%=@post.title%></h2>
+        <p class="post-meta">
+          <a class="post-author"><%=@post.author%></a> under
+          <% @post.tags.each_with_index do |tag, index|
+            tag_colors = ["design", "pure", "js", "yui"]
+          color = tag_colors[index] %>
+          <a class='post-category post-category-<%=color%>'><%= tag %></a>
+          <%end%>
+        </p>
+      </header>
+      <div class="social--buttons">
+        <a href="https://twitter.com/share" class="twitter-share-button"{count} data-text='<%= @post.title %>' data-via="bbrassart" data-size="large">
+          Tweet
+        </a>
+        <a href="https://twitter.com/bbrassart" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @bbrassart</a>
+      </div>
+      <img alt="<%=@post.image_caption%>" class="first--image__post pure-img-responsive"
+        src="<%=@post.image%>">
+      <%=@post.intro.html_safe %>
+      <p class="post-meta"><%=@post.date%></p>
+      <%=@post.text.html_safe%>
+      <div id="comments">
+      </div>
+    </section>
+  </div>
+</div>
+<%= render partial: "helpers/blogposts_list_menu", locals: {posts: @posts} %>

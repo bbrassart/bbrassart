@@ -90,7 +90,7 @@ progression en 2013. Le nombre d'utilisateurs continue de grimper de jour en jou
 <a href='https://itunes.apple.com/us/app/popkey-animated-gif-keyboard/id919359310?mt=8'
 target=_blank>PopKey</a> est un clavier tiers pour iOS 8, entièrement dédiée aux animations
 GIF. Du pain béni pour qui souhaite pimenter ses conversations iMessage.</p>
-<img src='https://s3-us-west-2.amazonaws.com/bbrassart/popeky.jpg'>
+<img class='pure-img' src='https://s3-us-west-2.amazonaws.com/bbrassart/popeky.jpg'>
 <h3>Les plus de PopKey</h3><ul><li>Si vous utilisez
 <a href='http://support.apple.com/fr-fr/ht4976' target=_blank>Emoji</a>, l'appli de smileys
 pour iPhone, vous savez d'ores et déjà utiliser PopKey.</li><li>Aucune création de compte n'est
@@ -118,7 +118,7 @@ choisissez l'une des options suivantes: <em>Message</em> pour accéder à iMessa
 Facebook ou une autre appli, <em>Save</em> pour sauvegarder le GIF dans votre Galerie photo et
 <em>Favorite</em>Gifit pour l'ajouter à vos GIFs
 favoris. </p>
-<img src='https://s3-us-west-2.amazonaws.com/bbrassart/Gifit.jpg'>
+<img class='pure-img' src='https://s3-us-west-2.amazonaws.com/bbrassart/Gifit.jpg'>
 <h3>Les plus de Gifit</h3>
 <ul><li>Aucun compte nécessaire.</li>
 <li>Vous pouvez copier l'URL du GIF dans le presse-papier, pour le coller dans
@@ -134,7 +134,7 @@ très vite dans l'ordre.</li></ul><h3>La note finale</h3><p>8,5 / 10</p>
 simplicité, des <strong>GIF selfies</strong>. Les résultats obtenus sont particulièrement réussis et, à
 l'image d'Instagram, PHHHOTO parvient à sublimer toutes vos clichés, grâce à un <strong>savant
 mélange de basse résolution et de jeux de lumière</strong>.</p>
-<img src='https://s3-us-west-2.amazonaws.com/bbrassart/PHHHOTO.jpg'>
+<img class='pure-img' src='https://s3-us-west-2.amazonaws.com/bbrassart/PHHHOTO.jpg'>
 <p>Outre la version grand public, PHHHOTO se finance également à l'aide d'installations,
 louées à des promoteurs de soirées. L'exemple le plus récent?  Un <strong>photomaton PHHHOTO</strong>
 était l'une des attractions du bateau accueillant la <a href='https://twitter.com/hashtag/MadDecentBoatParty?src=hash'
@@ -184,7 +184,7 @@ différents budgets, les meilleurs <strong>cadeaux spécial geek</strong>, qui f
 enfant, à votre ami, ou à tout autre membre de votre famille amateur de nouvelles technologies...</p>",
 text: "
 <h2>Moins de 25 euros: cartes cadeaux d'applications ou de musique en ligne</h2>
-<img src='https://s3-us-west-2.amazonaws.com/bbrassart/spotify.jpg'>
+<img class='pure-img' src='https://s3-us-west-2.amazonaws.com/bbrassart/spotify.jpg'>
 <p>Que peut-on offrir à un geek pour moins de 50 euros? Un jeu vidéo, bien entendu. Si la PS4 ou la
 Xbox One trône déjà dans le salon, <a href='http://www.begeek.fr/idees-cadeaux-noel-2014-les-meilleurs-jeux-sur-xbox-et-playstation-153709'
 target=_blank>l'un des meilleurs titres de l'année</a> fera forcément l'affaire.
@@ -198,7 +198,7 @@ Philips BT2500</a> et la
 <a href='http://www.amazon.fr/JBL-Clip-Noir-rechargeable-mousqueton/dp/B00MA4PNEW/ref=sr_1_1?ie=UTF8&qid=1417821103&sr=8-1&keywords=jbl+clip'
 target=_blank>JBL Clip</a>.</p>
 <h2>Entre 50 et 100 euros: objets connectés et accessoires pour smartphones</h2>
-<img src='https://s3-us-west-2.amazonaws.com/bbrassart/fitbit_flex.jpg'><p>
+<img class='pure-img' src='https://s3-us-west-2.amazonaws.com/bbrassart/fitbit_flex.jpg'><p>
 Pour un budget avoisinant les 100 euros, je vous propose ici deux objets très différents. Le premier
 s'adresse davantage aux sportifs. Le bracelet
 <a href='http://www.amazon.fr/Fitbit-Flex-Bracelet-%C3%A9lectronique/dp/B00GSXIAKU' taregt=_blank>
@@ -212,7 +212,7 @@ Comme son nom l'indique, cet accessoire se clipse sur le téléphone. Il permet 
 prendre des photos originales, soit à l'aide du fish-eye, soit à l'aide des objectifs macro et
 grand-angle. Il existe des versions pour les iPhone 6, 5S et 4S, et les Samsung S5 et S4.</p>
 <h2>Plus de 100 euros: casques Hi-Fi</h2>
-<img src='https://s3-us-west-2.amazonaws.com/bbrassart/beats.jpg'>
+<img class='pure-img' src='https://s3-us-west-2.amazonaws.com/bbrassart/beats.jpg'>
 <p>Vous disposez d'un budget de plus de 100 euros? Vous n'aurez que l'embarras du choix...
 Vous recherchez <strong>un cadeau exceptionnel?</strong> Pourquoi ne pas regarder du coté des
 casques audio hi-fi? Ils figurent, à n'en pas douter, sur la liste des produits stars de ce Noël 2014.</p>
@@ -275,11 +275,13 @@ accrochez la GoPro. Vous n’arriverez jamais à stabiliser l’image avec ce ge
 <li>Un poids de chez l’ami Decathlon, que j’enroule autour du handler. Vous fatiguerez
 plus vite lors du filming, mais c’est indipsensable pour stabiliser la vidéo.</li>
 <li>Enfin, les petits accessoires GoPro, pour accrocher la GoPro au handler.</li>
-<img src='https://s3-us-west-2.amazonaws.com/bbrassart/gopro_setup.jpg'>
-<img src='https://s3-us-west-2.amazonaws.com/bbrassart/gopro-setup-unmounted.jpg'>
+<div class='pure-g'>
+<div class='pure-u-md-1-2 pure-u-sm-1-1'><img class='pure-img' src='https://s3-us-west-2.amazonaws.com/bbrassart/gopro_setup.jpg'></div>
+<div class='pure-u-md-1-2 pure-u-sm-1-1'><img class='pure-img' src='https://s3-us-west-2.amazonaws.com/bbrassart/gopro-setup-unmounted.jpg'></div>
+</div>
 <h2>Le résutat en vidéo</h2>
-<iframe width='560' height='315' src='https://www.youtube.com/embed/Ywn4sIHadMo'
-frameborder='0' allowfullscreen></iframe>
+<div class='pure-img'><iframe width='560' height='315' src='https://www.youtube.com/embed/Ywn4sIHadMo'
+frameborder='0' allowfullscreen></iframe></div>
 <h2>Pourquoi je n'acheterai pas la GoPro 4 (et quels sont les vrais problèmes)</h2>
 <ul><li><strong>Filmer en 4K mais pour quoi faire?!</strong> Qui a un écran 4K à la maison?!!
 Pour rappel (j’ai l’impression qu’on l’oublie bien souvent) <strong>une source 4K sur un écran

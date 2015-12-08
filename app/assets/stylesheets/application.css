@@ -13,9 +13,76 @@
  *= require_tree .
  *= require_self
  */
+ th {
+   color: white;
+   font-weight: lighter;
+ }
+
+ .blog--main__title {
+   padding-bottom: 1em;
+ }
+
+ .social--buttons {
+   padding: 1em 0;
+ }
+
+ thead {
+   background-color: #1f8dd6 !important;
+ }
+
+.blog--header {
+  margin: 3em 2em 0;
+}
+.white--text {
+  color: white;
+  font-weight: lighter;
+}
+
+.white--text:hover {
+  color: black;
+}
+
+@media (max-width: 60em) {
+   .margin__blog--menu {
+     margin-left: 5%;
+   }
+   .custom-restricted {
+       height: 150px;
+       width: 90%;
+       border: 1px solid gray;
+       border-radius: 4px;
+   }
+ }
+
+@media (min-width: 60em) {
+   .margin__blog--menu {
+     margin-left: 25%;
+   }
+   .custom-restricted {
+       height: 150px;
+       width: 50%;
+       border: 1px solid gray;
+       border-radius: 4px;
+   }
+ }
+
+.blog__header {
+   margin: 3em 2em 0;
+ }
 
 #showGithub {
   color: white;
+}
+
+
+
+.pure-u-md-1-2 {
+  width: 49.5%;
+}
+
+.blogpost--entry {
+  height: 20%;
+  padding: 5px 0;
 }
 
 #makeSmallerText {
@@ -78,7 +145,6 @@ div#limitGithub {
   padding-bottom: 1.3em;
 }
 
-
 .contact--form {
   padding-top: 45px;
 }
@@ -106,14 +172,20 @@ div#limitGithub {
   float: left;
 }
 
-th {
+th .white--text {
   color: white;
   font-weight: lighter;
 }
 
-thead {
-  background-color: #1f8dd6 !important;
+.white--text {
+  padding: 2px 0;
 }
+
+.white--text:hover {
+
+}
+
+
 
 .button-xsmall {
   font-size: 45%;
