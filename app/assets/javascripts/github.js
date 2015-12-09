@@ -32,26 +32,26 @@ var github = {
   },
 
   buildMainTableHeader: function() {
-    return `<table align="center" class="pure-table">
-    <thead>
-        <tr>
-            <th class='is-center'>Name</th>
-            <th class='is-center'>Language</th>
-            <th class='is-center'>Last commit</th>
-        </tr>
-    </thead>
-    <tbody>`
+    var html = `<table align="center" class="pure-table"><thead><tr><th class='is-center'>Name</th>`
+    if ($(window).width() > 558) {
+      html += `<th class='is-center'>Language</th>
+      <th class='is-center'>Last commit</th>`
+    }
+    html += `</tr></thead><tbody>`
+    return html;
   },
 
   buildChartRow: function(project) {
-    return `<tr><th>
-    <a class='repo-link' href="https://www.github.com/${project.full_name}" target=_blank>
-    ${project.name}</a></th><th>${project.language}</th>
-    <th>${project.updated_at.slice(0, 10)}</th></tr>`
+    var html = `<tr><th><a class='repo-link' href="https://www.github.com/${project.full_name}" target=_blank>
+    ${project.name}</a></th>`
+    if ($(window).width() > 558) {
+      html += `<th>${project.language}</th><th>${project.updated_at.slice(0, 10)}</th>`
+    }
+    return html;
   },
 
   buildCloseTable: function() {
-    return `</tbody></table>`
+    return `</tr></tbody></table>`
   },
 
   createHashOfTechs: function(response) {
