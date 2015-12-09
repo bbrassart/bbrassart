@@ -176,6 +176,12 @@ div#limitGithub {
   float: left;
 }
 
+.first--image__dedicatedpage {
+  height: 150px;
+  padding: 20px 20px 0 0;
+  float: left;
+}
+
 th .white--text {
   color: white;
   font-weight: lighter;
