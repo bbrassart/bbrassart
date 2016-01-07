@@ -40,7 +40,7 @@ text: "2015 will be the year of home automation,
   web developers” ☺",
 date: DateTime.new(2015, 6, 8),
 author: "Baptiste Brassart",
-image: "https://s3-us-west-2.amazonaws.com/bbrassart/github_code.jpg",
+image: "https://s3-us-west-2.amazonaws.com/bbrassart/github_ror_code.jpg",
 author_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/bbrassart_avatar.jpg",
 tags: ["development", "tech", "geek", "code"]
 )
@@ -52,7 +52,7 @@ url: "2014-12-12-meilleures-applis-gif-iphone",
 title: "Du GIF en barre: les meilleures applis iPhone",
 currentIndex: 2,
 image_caption: "GIF up your life",
-image: "https://s3-us-west-2.amazonaws.com/bbrassart/gif.jpg",
+image: "https://s3-us-west-2.amazonaws.com/bbrassart/keep_calm_gif.jpg",
 intro: "<p>Le <strong>GIF</strong>, on ne sait plus très bien s'il a le vent en poupe, s'il a toujours été
 présent, ou si ce n'est qu'une mode passagère. Dans tous les cas, voici une sélection des
 <strong>meilleures applications iPhone</strong> du moment... pas que je sois fâché avec Android, c'est juste
@@ -174,7 +174,7 @@ url: "2014-05-12-cadeaux-noel-geek",
 title: "Idées cadeaux: les objets geek pour Noël",
 currentIndex: 1,
 image_caption: "Cadeaux de Noël geek",
-image: "https://s3-us-west-2.amazonaws.com/bbrassart/noel_geek.jpg",
+image: "https://s3-us-west-2.amazonaws.com/bbrassart/superhero_noel_geek.jpg",
 intro: "<p>Offrir un cadeau de Noël qui plait n'est jamais une mince affaire. Votre ami est
 <strong>un peu geek</strong> sur les bords? Cette liste de <strong>cadeaux high-tech à petit prix</strong>
 classés par budget est faite pour vous.</p><p>Chaque année, le marché des nouvelles technologies voit
@@ -246,7 +246,7 @@ url: "2014-11-20-gopro-comparatif",
 title: "Comparatif GoPro: quelle caméra choisir?",
 currentIndex: 0,
 image_caption: "Publicité GoPro",
-image: "https://s3-us-west-2.amazonaws.com/bbrassart/gopro_ad.jpg",
+image: "https://s3-us-west-2.amazonaws.com/bbrassart/gopro_skateboard_ad.jpg",
 intro: "<p>Inutile de présenter les action cams GoPro, celles qui ont révolutionné le secteur des
 caméras miniatures. Avec un marketing hyper agressif à coup de millions de dollars
 (cf. le nombre de vidéos sponsorisées que poste chaque semaine
