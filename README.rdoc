@@ -2,7 +2,7 @@
 
 I created my personal website with the following technologies:
 
-A Rails single page app set up with MongoDB
+A Rails single page app set up with MongoDB and Pure CSS
 
 * Ruby version : 2.2.2
 
