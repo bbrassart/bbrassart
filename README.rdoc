@@ -1,28 +1,15 @@
-== README
+== WELCOME TO MY WORLD
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I created my personal website with the following technologies:
 
-Things you may want to cover:
+A Rails single page app set up with MongoDB
 
-* Ruby version
+* Ruby version : 2.2.2
 
-* System dependencies
+GETTING STARTED :
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+- Git clone
+- Bundle install
+- Seed it the database
+- Initialize the rails server.
+- You are good to go!
