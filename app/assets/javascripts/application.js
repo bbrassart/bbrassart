@@ -14,27 +14,27 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+(function() {
+  $(document).on('ready page:load', function () {
+    if ($("#comments").length != 0) {
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 
-$(document).on('ready page:load', function () {
-  if ($("#comments").length != 0) {
-    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+      $('.header').addClass("blog--header");
+    }
+    var listenToGithub = Object.create(github);
+    listenToGithub.setInitialListeners();
+    var listenToBlog = Object.create(blog);
+    listenToBlog.buildFirstPost();
+    listenToBlog.setInitialListeners();
+    var listenToReduceCv = Object.create(reduceCv);
+    listenToReduceCv.setInitialListeners();
 
-    $('.header').addClass("blog--header");
-  }
-  var listenToGithub = Object.create(github);
-  listenToGithub.setInitialListeners();
-  var listenToBlog = Object.create(blog);
-  listenToBlog.buildFirstPost();
-  listenToBlog.setInitialListeners();
-  var listenToReduceCv = Object.create(reduceCv);
-  listenToReduceCv.setInitialListeners();
+    var listenToSocialMedia = Object.create(socialMedia);
+    listenToSocialMedia.setInitialListeners();
 
-  var listenToSocialMedia = Object.create(socialMedia);
-  listenToSocialMedia.setInitialListeners();
-
-  var listenToCV = Object.create(cv);
-  listenToCV.setInitialListeners();
-  twttr.widgets.load();
-
-});
+    var listenToCV = Object.create(cv);
+    listenToCV.setInitialListeners();
+    twttr.widgets.load();
+  })
+})();
