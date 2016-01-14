@@ -169,6 +169,10 @@ div#limitGithub {
   margin: 1em 0 1em !important;
 }
 
+.company-link {
+  font-size: 1.15em;
+}
+
 
 .first--image__post {
   height: 150px;

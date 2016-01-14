@@ -329,9 +329,26 @@ tags: ["gopro", "action cam", "skateboarding", "video"]
 
 Experience.destroy_all
 Year.destroy_all
-first = Year.create(title: 2015)
 
-first.experiences.create(
+year_2016 = Year.create(title: 2016)
+
+year_2016.experiences.create(
+official_url: "https://www.shoesize.me",
+starting_date: DateTime.new(2016, 1, 18),
+title: "Software developer",
+tags: ["developer", "ruby on rails", "javascript", "code"],
+company_name: "ShoeSize.me",
+location: "Barcelona",
+description:"<ul><li>Working in tight collaboration with the backend and the Javascript team to improve the current plugin</li>
+<li>Adding new features to the plugin</li>
+<li>Optimizing it for different (mobile) devices</li></ul>",
+company_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/shoesizeme.jpg"
+)
+
+year_2015 = Year.create(title: 2015)
+
+year_2015.experiences.create(
+official_url: "https://www.ironhack.com/",
 starting_date: DateTime.new(2015, 8, 1),
 ending_date: DateTime.new(2015, 12, 1),
 title: "Teaching assistant",
@@ -347,7 +364,8 @@ description: "<ul><li>After graduating from IronHack, I'm now working as a teach
 company_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/ironhack.png"
 )
 
-first.experiences.create(
+year_2015.experiences.create(
+  official_url: "https://www.ironhack.com/",
   starting_date: DateTime.new(2015, 6, 1),
   ending_date: DateTime.new(2015, 8, 1),
   tags: ["code", "javascript", "ruby on rails", "html", "css"],
@@ -363,6 +381,7 @@ first.experiences.create(
 )
 
 softonic = {
+  official_url: "http://www.softonic.com/",
   starting_date: DateTime.new(2010, 12, 1),
   ending_date: DateTime.new(2014, 12, 1),
   tags: ["editorial", "web", "microsoft", "social media", "content"],
@@ -382,16 +401,16 @@ softonic = {
   company_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/softonic.png"
 }
 
-second = Year.create(title: 2014)
-second.experiences.create(softonic)
-third = Year.create(title: 2013)
-third.experiences.create(softonic)
-fourth = Year.create(title: 2012)
-fourth.experiences.create(softonic)
-fifth = Year.create(title: 2011)
-fifth.experiences.create(softonic)
-sixth = Year.create(title: 2010)
-sixth.experiences.create(softonic)
+year_2014 = Year.create(title: 2014)
+year_2014.experiences.create(softonic)
+year_2013 = Year.create(title: 2013)
+year_2013.experiences.create(softonic)
+year_2012 = Year.create(title: 2012)
+year_2012.experiences.create(softonic)
+year_2011 = Year.create(title: 2011)
+year_2011.experiences.create(softonic)
+year_2010 = Year.create(title: 2010)
+year_2010.experiences.create(softonic)
 
 
 puts "DB filled"

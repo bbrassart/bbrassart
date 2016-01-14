@@ -48,7 +48,7 @@ var cv = {
 
   buildMetaBody: function(data) {
     return `</div><div class="xp-col pure-u-md-1-2 pure-u-sm-1-1">
-    <p><b>${data.title}</b> at ${data.company_name}</p>`
+    <p><b>${data.title}</b> at <a class="company-link" target=_blank href="${data.official_url}">${data.company_name}</a></p>`
   },
 
   buildBody: function(data) {
@@ -58,8 +58,9 @@ var cv = {
   },
 
   buildDates: function(data) {
-    return `<div class="pure-u-md-1-2"><p>Starting date: ${data.starting_date}</p>
-    <p>Ending date: ${data.ending_date}</p></div>`
+    var html = `<div class="pure-u-md-1-2"><p>Starting date: ${data.starting_date}</p>`;
+    data.ending_date == null ? html += `<p>Current</p></div>` : html += `<p>Ending date: ${data.ending_date}</p></div>`;
+    return html;
   },
 
   buildLocation: function(data) {
@@ -67,7 +68,7 @@ var cv = {
   },
 
   buildLogo: function(data) {
-    return `<div class="pure-u-md-1-2"><img src=${data.company_logo} class="xp-logo" height=100px></div>`
+    return `<div class="pure-u-md-1-2"><a href="${data.official_url}" target=_blank><img src=${data.company_logo} class="xp-logo" height=100px></a></div>`
   },
 
   buildTags: function(tags) {
