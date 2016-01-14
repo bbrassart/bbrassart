@@ -157,12 +157,23 @@ div#limitGithub {
   white-space: normal;
 }
 
+.pure-menu-list {
+  margin-top: 6px !important;
+}
+
 .pure-form input[type] {
   margin-top: 0.5em;
 }
 
 .repo-link {
   color: #6FBEF3;
+}
+
+#my_name {
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  text-transform: none;
+  margin-top: -5px;
 }
 
 .github--projects__text {
