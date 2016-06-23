@@ -3,7 +3,7 @@ class Api::V1::ExperiencesController < ApplicationController
     year = Rails.cache.fetch("cv/#{params[:year]}") do
       Year.find_by(title: params[:year].to_i)
     end
-    xps = year.experiences
-    render json: xps
+    response = year.experiences
+    render json: response
   end
 end
