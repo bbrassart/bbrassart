@@ -4,4 +4,4 @@ var socialMedia = {
         $('#showTwitter, #showInstagram').toggle();
     });
   }
-}
+};
