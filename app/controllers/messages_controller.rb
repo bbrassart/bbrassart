@@ -3,7 +3,11 @@ class MessagesController < ApplicationController
   def create
     @message = Message.new(message_params)
     if @message.save
-      WelcomeMailer.contact(@message).deliver_now
+      begin
+        WelcomeMailer.contact(@message).deliver_now
+      rescue
+        Net::SMTPAuthenticationError
+      end
       redirect_to root_path
     else
       redirect_to root_path
