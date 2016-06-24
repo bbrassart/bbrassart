@@ -19,7 +19,6 @@
   $(document).on('ready page:load', function () {
     //anchor navigation scroll effect
     $('a[href*=#]:not([href=#])').click(function() {
-      debugger;
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
           || location.hostname == this.hostname) {
 
