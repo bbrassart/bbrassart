@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  #public routes
+
   get '/' => 'features#index', as: 'root'
   post '/contact' => 'messages#create', as: 'contact'
   namespace :api do
@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   #admin routes
   get 'blogs/add' => 'users#add_blog'
   get '/blog/:url' => 'features#show'
+
 end
