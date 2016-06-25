@@ -25,24 +25,13 @@
             $('.header').addClass("blog--header");
         }
 
-        var listenToAnimationScroll = Object.create(anchorAnimation);
-        listenToAnimationScroll.setInitialListeners();
-
-        var listenToGithub = Object.create(github);
-        listenToGithub.setInitialListeners();
-
-        var listenToBlog = Object.create(blog);
-        listenToBlog.buildFirstPost();
-        listenToBlog.setInitialListeners();
-
-        var listenToReduceCv = Object.create(reduceCv);
-        listenToReduceCv.setInitialListeners();
-
-        var listenToSocialMedia = Object.create(socialMedia);
-        listenToSocialMedia.setInitialListeners();
-
-        var listenToCV = Object.create(cv);
-        listenToCV.setInitialListeners();
+        anchorAnimation.setInitialListeners();
+        github.setInitialListeners();
+        blog.buildFirstPost();
+        blog.setInitialListeners();
+        reduceCv.setInitialListeners();
+        socialMedia.setInitialListeners();
+        cv.setInitialListeners();
 
         twttr.widgets.load();
 
