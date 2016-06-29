@@ -1,24 +1,37 @@
 .mobile-nav-menu {
-    margin: 1em 1em;
+    margin: 1em 0;
     float: right;
+    color: white;
 }
 
 @media (max-width: 900px) {
-.mobile-nav-menu {
-        display: initial;
+    .mobile-nav-menu {
+            display: initial;
+        }
+    .mobile-nav-menu select {
+        font-size: 16px;
     }
 
-.desktop-nav-menu {
+
+    .desktop-nav-menu {
         display: none;
+    }
+
+    .home-menu {
+        text-align: left !important;
+    }
+    .home-menu a {
+        font-size: 1.5em !important;
+        padding-top: 0.8em;
     }
 }
 
 @media (min-width: 900px) {
-.mobile-nav-menu {
+    .mobile-nav-menu {
         display: none;
     }
 
-.desktop-nav-menu {
+    .desktop-nav-menu {
         display: initial;
     }
 }
