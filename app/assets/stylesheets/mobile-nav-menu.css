@@ -24,7 +24,6 @@
         padding-top: 0.8em;
     }
 }
-
 @media (min-width: 900px) {
     .mobile-nav-menu {
         display: none;
