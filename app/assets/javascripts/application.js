@@ -32,7 +32,6 @@
         reduceCv.setInitialListeners();
         socialMedia.setInitialListeners();
         cv.setInitialListeners();
-
         twttr.widgets.load();
 
     })
