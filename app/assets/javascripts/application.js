@@ -24,6 +24,7 @@
 
             $('.header').addClass("blog--header");
         }
+        mobileNavMenu.setInitialListeners();
 
         anchorAnimation.setInitialListeners();
         github.setInitialListeners();

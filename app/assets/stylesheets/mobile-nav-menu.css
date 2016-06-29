@@ -1,0 +1,24 @@
+.mobile-nav-menu {
+    margin: 1em 1em;
+    float: right;
+}
+
+@media (max-width: 900px) {
+.mobile-nav-menu {
+        display: initial;
+    }
+
+.desktop-nav-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) {
+.mobile-nav-menu {
+        display: none;
+    }
+
+.desktop-nav-menu {
+        display: initial;
+    }
+}

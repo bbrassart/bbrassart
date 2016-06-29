@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
  th {
    color: white;
    font-weight: lighter;
