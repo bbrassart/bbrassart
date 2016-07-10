@@ -333,9 +333,20 @@ Year.destroy_all
 year_2016 = Year.create(title: 2016)
 
 year_2016.experiences.create(
+    official_url: "https://www.devex.com/",
+    starting_date: DateTime.new(2016, 7, 4),
+    title: "Software engineer",
+    tags: ["developer", "ruby on rails", "javascript", "code"],
+    company_name: "Devex",
+    location: "Barcelona",
+    description:"<ul><li>Improving the current features, working hand in hand with both the front-end and the back-end teams</li></ul>",
+    company_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/devex.jpg"
+)
+
+year_2016.experiences.create(
   official_url: "https://www.shoesize.me",
   starting_date: DateTime.new(2016, 1, 18),
-  ending_date: DateTime.new(2015, 7, 1),
+  ending_date: DateTime.new(2016, 6, 23),
   title: "Full-Stack Software developer",
   tags: ["developer", "ruby on rails", "javascript", "code"],
   company_name: "ShoeSize.me",
@@ -344,17 +355,6 @@ year_2016.experiences.create(
   <li>Developing a new version of the API, specially tailored for the plugin, in the Ruby on Rails backend</li>
   <li>Optimizing it for different (mobile) devices</li></ul>",
   company_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/shoesizeme.jpg"
-)
-
-year_2016.experiences.create(
-  official_url: "https://www.devex.com/",
-  starting_date: DateTime.new(2016, 7, 4),
-  title: "Software engineer",
-  tags: ["developer", "ruby on rails", "javascript", "code"],
-  company_name: "Devex",
-  location: "Barcelona",
-  description:"<ul><li>Improving the current features, working hand in hand with both the front-end and the back-end teams</li></ul>",
-  company_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/devex.jpg"
 )
 
 year_2015 = Year.create(title: 2015)
