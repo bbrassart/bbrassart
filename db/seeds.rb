@@ -335,7 +335,7 @@ year_2016 = Year.create(title: 2016)
 year_2016.experiences.create(
     official_url: "https://www.devex.com/",
     starting_date: DateTime.new(2016, 7, 4),
-    title: "Software engineer",
+    title: "Web Developer",
     tags: ["developer", "ruby on rails", "javascript", "code"],
     company_name: "Devex",
     location: "Barcelona",
