@@ -347,7 +347,7 @@ year_2016.experiences.create(
   official_url: "https://www.shoesize.me",
   starting_date: DateTime.new(2016, 1, 18),
   ending_date: DateTime.new(2016, 6, 23),
-  title: "Full-Stack Software developer",
+  title: "Full-Stack Web Developer",
   tags: ["developer", "ruby on rails", "javascript", "code"],
   company_name: "ShoeSize.me",
   location: "Barcelona",
