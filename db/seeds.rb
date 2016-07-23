@@ -240,7 +240,6 @@ author_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/bbrassart_avatar.jpg"
 tags: ["noel", "cadeaux", "geek", "fêtes"]
 )
 
-
 Blog.create(
 url: "2014-11-20-gopro-comparatif",
 title: "Comparatif GoPro: quelle caméra choisir?",
