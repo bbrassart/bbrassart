@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby '2.2.2'
 
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -15,7 +14,10 @@ gem 'mongo'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 gem 'faker'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
+# Angula-related Gems
+gem 'bower-rails'
+gem 'angular-rails-templates'
 group :production do
   gem 'rails_12factor'
 end
