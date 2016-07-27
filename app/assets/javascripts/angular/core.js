@@ -1,3 +1,4 @@
 app = angular.module('myAngular',[
-  'templates'
+  'templates',
+  'ngResource'
 ]);

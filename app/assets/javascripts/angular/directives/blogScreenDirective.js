@@ -1,8 +1,13 @@
-app.directive('blogscreen', function() {
+app.directive('blogscreen', ['mainService', function(mainService) {
 
   ctrl = function() {
     var self = this;
+    self.blog = {};
     self.name = 'Baptiste angular';
+    blog = mainService.getBlog(3);
+    blog.$promise.then(function(data) {
+      self.blog = data;
+    });
   };
 
   return {
@@ -11,6 +16,6 @@ app.directive('blogscreen', function() {
     bindToController: true,
     controller: ctrl,
     controllerAs: 'vm',
-    template: '{{vm.name}}'
+    templateUrl: '_blogScreen.html'
   };
-});
+}]);

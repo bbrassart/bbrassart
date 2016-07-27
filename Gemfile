@@ -18,6 +18,7 @@ gem 'font-awesome-rails'
 # Angula-related Gems
 gem 'bower-rails'
 gem 'angular-rails-templates'
+
 group :production do
   gem 'rails_12factor'
 end

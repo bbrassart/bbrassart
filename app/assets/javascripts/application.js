@@ -15,9 +15,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require angular/angular
+//= require angular-resource
 //= require angular-rails-templates
-
+//= require_tree ./templates
 //= require_tree .
+
 (function() {
     $(document).on('ready page:load', function () {
         if ($("#comments").length != 0) {
