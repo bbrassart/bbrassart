@@ -277,9 +277,8 @@ plus vite lors du filming, mais c’est indipsensable pour stabiliser la vidéo.
 <div class='pure-u-md-1-2 pure-u-sm-1-1'><img class='pure-img' src='https://s3-us-west-2.amazonaws.com/bbrassart/gopro_setup.jpg'></div>
 <div class='pure-u-md-1-2 pure-u-sm-1-1'><img class='pure-img' src='https://s3-us-west-2.amazonaws.com/bbrassart/gopro-setup-unmounted.jpg'></div>
 </div>
-<h2>Le résutat en vidéo</h2>
-<div class='pure-img'><iframe width='560' height='315' src='https://www.youtube.com/embed/Ywn4sIHadMo'
-frameborder='0' allowfullscreen></iframe></div>
+<h2><a target='_blank' href='https://youtu.be/Ywn4sIHadMo'>Le résutat en vidéo</a></h2>
+
 <h2>Pourquoi je n'acheterai pas la GoPro 4 (et quels sont les vrais problèmes)</h2>
 <ul><li><strong>Filmer en 4K mais pour quoi faire?!</strong> Qui a un écran 4K à la maison?!!
 Pour rappel (j’ai l’impression qu’on l’oublie bien souvent) <strong>une source 4K sur un écran
