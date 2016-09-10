@@ -1,7 +1,7 @@
 app.directive('githubscreen', ['mainService', 'bsLoadingOverlayService', '$window', '$timeout',
     function(mainService, bsLoadingOverlayService, $window, $timeout) {
 
-    ctrl = function() {
+    var ctrl = function() {
         var self = this;
         self.githubProjects = [];
         self.buttonText = "See my profile";

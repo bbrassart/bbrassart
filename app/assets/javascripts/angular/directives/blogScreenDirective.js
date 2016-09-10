@@ -1,7 +1,7 @@
 app.directive('blogscreen', ['$sce', 'mainService', 'bsLoadingOverlayService', '$window', '$timeout',
     function($sce, mainService, bsLoadingOverlayService, $window, $timeout) {
 
-      ctrl = function() {
+      var ctrl = function() {
           var self = this;
           self.numberOfPosts = 3;
           self.blog = {};

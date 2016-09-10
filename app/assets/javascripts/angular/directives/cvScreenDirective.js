@@ -1,7 +1,7 @@
 app.directive('cvscreen', ['mainService','bsLoadingOverlayService', '$timeout', '$window',
     function(mainService, bsLoadingOverlayService, $timeout, $window) {
 
-    ctrl = function() {
+    var ctrl = function() {
         var self = this;
         self.isShowing = false;
         self.experiences = [];
