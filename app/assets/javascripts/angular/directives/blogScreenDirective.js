@@ -31,14 +31,13 @@ app.directive('blogscreen', ['$sce', 'mainService', 'bsLoadingOverlayService', '
 ;              mainService.getBlog(idParam)
                   .$promise.then( function(response) {
                     self.blog = response;
-                      self.trustedLongText = $sce.trustAsHtml(self.blog.text);
-                      $timeout(function() {
-                          bsLoadingOverlayService.stop({
-                              referenceId: 'blog-loading'
-                          });
-                        }, 50
-                      )
-
+                    self.trustedLongText = $sce.trustAsHtml(self.blog.text);
+                    $timeout(function() {
+                      bsLoadingOverlayService.stop({
+                        referenceId: 'blog-loading'
+                      });
+                    }, 50
+                    )
                   }
               )
           };
