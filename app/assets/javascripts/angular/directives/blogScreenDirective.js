@@ -1,5 +1,5 @@
-app.directive('blogscreen', ['mainService', 'bsLoadingOverlayService', '$window',
-    function(mainService, bsLoadingOverlayService, $window) {
+app.directive('blogscreen', ['$sce', 'mainService', 'bsLoadingOverlayService', '$window', '$timeout',
+    function($sce, mainService, bsLoadingOverlayService, $window, $timeout) {
 
       ctrl = function() {
           var self = this;
@@ -31,9 +31,14 @@ app.directive('blogscreen', ['mainService', 'bsLoadingOverlayService', '$window'
 ;              mainService.getBlog(idParam)
                   .$promise.then( function(response) {
                     self.blog = response;
-                      bsLoadingOverlayService.stop({
-                          referenceId: 'blog-loading'
-                      });
+                      self.trustedLongText = $sce.trustAsHtml(self.blog.text);
+                      $timeout(function() {
+                          bsLoadingOverlayService.stop({
+                              referenceId: 'blog-loading'
+                          });
+                        }, 50
+                      )
+
                   }
               )
           };

@@ -27,13 +27,13 @@
                 </header>
                 <img alt="{{vm.blog.image_caption}}" class="first--image__post pure-img-responsive" ng-src={{vm.blog.image}}>
                 <span ng-bind-html="vm.blog.intro"></span>
-                <div class="is-center" ng-show="!vm.longForm" ng-click="vm.isLongForm()">
-                    <button class="pure-button pure-button-primary" id="triggerRevealText">Show me more</button>
+                <div class="is-center show-me-more" ng-show="!vm.longForm" ng-click="vm.isLongForm()">
+                    <button class="pure-button pure-button-primary">Show me more</button>
                 </div>
-                <div id="revealText" ng-show="vm.longForm">
-                    <span ng-bind-html="vm.blog.text"></span>
+                <div class="long-form-blog" ng-show="vm.longForm">
+                    <span ng-bind-html="vm.trustedLongText"></span>
                 </div>
-                <div id="makeMeSmallerDiv" ng-show="vm.longForm" class="is-center">
+                <div ng-show="vm.longForm" class="long-form-actions is-center">
                     <div class="pure-u-1">
                         <div class="is-center">
                             <button ng-click="vm.backToSmallForm()" class="pure-button pure-button-primary" id="makeSmallerText">

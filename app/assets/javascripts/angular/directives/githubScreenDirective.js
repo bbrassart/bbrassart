@@ -1,4 +1,5 @@
-app.directive('githubscreen', ['mainService', '$window', function(mainService, $window) {
+app.directive('githubscreen', ['mainService', 'bsLoadingOverlayService', '$window', '$timeout',
+    function(mainService, bsLoadingOverlayService, $window, $timeout) {
 
     ctrl = function() {
         var self = this;
@@ -11,16 +12,30 @@ app.directive('githubscreen', ['mainService', '$window', function(mainService, $
         };
 
         self.performRequest = function() {
+            bsLoadingOverlayService.start({
+                referenceId: 'github-loading'
+            });
             mainService.getGithub()
                 .$promise.then(
                 function(response) {
                     self.githubProjects = response;
-                    self.isShowing = true;
-                    self.buttonText = "Make me smaller";
+                    $timeout(function() {
+                        self.isShowing = true;
+                        self.buttonText = "Make me smaller";
+                        bsLoadingOverlayService.stop({
+                            referenceId: 'github-loading'
+                        });
+                    }, 200
+                    );
+
                 },
                 function(err) {
+
                     self.error = err;
                     self.isShowing = false;
+                    bsLoadingOverlayService.stop({
+                        referenceId: 'github-loading'
+                    });
                 }
             );
         };

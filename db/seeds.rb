@@ -139,7 +139,7 @@ louées à des promoteurs de soirées. L'exemple le plus récent?  Un <strong>ph
 était l'une des attractions du bateau accueillant la <a href='https://twitter.com/hashtag/MadDecentBoatParty?src=hash'
 target=_blank>#MadDecentBoatParty</a>, une soirée
 organisée par le label de Diplo, le producteur à succès.</p>
-<iframe width='560' height='315' src='https://www.youtube.com/embed/msFC59ttLhc' frameborder='0' allowfullscreen></iframe>
+<iframe src='https://www.youtube.com/embed/msFC59ttLhc' width='560' height='315' frameborder='0' allowfullscreen></iframe>
 <p>PHHHOTO semble déjà avoir trouvé son public et compte bien devenir <strong>the perfect
 party app</strong>. Une appli qui vaut vraiment le détour!</p>
 <h3>les plus de PHHHOTO</h3>
@@ -266,7 +266,7 @@ plus que 150 eur d’occasion</a>. Avec ça, vous aurez quand même de la Full H
 je suis obligé de retravailler le son, qui n’est enregistré qu’en mono lors des prises.
 Mais rien de bien compliqué, il suffit de dédoubler le canal mono pour obtenir un
 faux-semblant de stéréo.</li><li>Un handler, poignée de stabilisation en bon français,
-acheté sur <a href='http://www.amazon.fr/Opteka-X-GRIP-Stabilisation-Cam%C3%A9oscopes-Microphone/dp/B003UWQJMI/ref=sr_1_2?ie=UTF8&qid=1415452902&sr=8-2&keywords=xgrip' target=_blank>
+acheté sur <a href='http://www.amazon.fr/Opteka-X-GRIP-Stabilisation-Cam%C3%A9oscopes-Microphone/dp/B0F03UWQJMI/ref=sr_1_2?ie=UTF8&qid=1415452902&sr=8-2&keywords=xgrip' target=_blank>
 Amazon pour une bouchée de pain</a>. Je vous recommande chaudement la marque XGrip.
 Autre chose: évitez les perches, ces sortes de gros bâtons au bout desquels vous
 accrochez la GoPro. Vous n’arriverez jamais à stabiliser l’image avec ce genre d’accessoires.</li>
@@ -277,7 +277,9 @@ plus vite lors du filming, mais c’est indipsensable pour stabiliser la vidéo.
 <div class='pure-u-md-1-2 pure-u-sm-1-1'><img class='pure-img' src='https://s3-us-west-2.amazonaws.com/bbrassart/gopro_setup.jpg'></div>
 <div class='pure-u-md-1-2 pure-u-sm-1-1'><img class='pure-img' src='https://s3-us-west-2.amazonaws.com/bbrassart/gopro-setup-unmounted.jpg'></div>
 </div>
-<h2><a target='_blank' href='https://youtu.be/Ywn4sIHadMo'>Le résutat en vidéo</a></h2>
+<h2>Le résutat en vidéo</h2>
+<iframe src='https://www.youtube.com/embed/Ywn4sIHadMo' width='560' height='315' frameborder='0' allowfullscreen></iframe>
+
 
 <h2>Pourquoi je n'acheterai pas la GoPro 4 (et quels sont les vrais problèmes)</h2>
 <ul><li><strong>Filmer en 4K mais pour quoi faire?!</strong> Qui a un écran 4K à la maison?!!

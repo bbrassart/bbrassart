@@ -14,11 +14,60 @@
  *= require_self
  */
 
-#blog {
+#blog,
+#cv,
+#github {
     position:relative;
 }
 
-.loading-content > *:not(.spinner) { opacity: 0.3 }
+/*ng-animates css properties*/
+
+.reduce-cv.ng-hide,
+.long-form-actions.ng-hide {
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.show-me-more.ng-hide {
+    opacity: 0;
+    transition-duration: 0s;
+}
+
+.show-me-more,
+.long-form-actions,
+.reduce-cv {
+    opacity: 1;
+    overflow-y: hidden;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+.githubTable,
+.long-form-blog,
+.experiences {
+    overflow-y: hidden;
+    opacity: 1;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    max-height: 7000px;
+}
+
+.githubTable.ng-hide,
+.long-form-blog.ng-hide,
+.experiences.ng-hide {
+    overflow-y: hidden;
+    opacity: 0;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    max-height: 0px;
+}
+
+
+/* when showing the picture */
+
+.loading-content > *:not(.spinner) {
+    opacity: 0.3;
+}
 
 .med-col {
     width: 49.2%;

@@ -1,4 +1,5 @@
-app.directive('cvscreen', ['mainService', '$window', function(mainService, $window) {
+app.directive('cvscreen', ['mainService','bsLoadingOverlayService', '$timeout', '$window',
+    function(mainService, bsLoadingOverlayService, $timeout, $window) {
 
     ctrl = function() {
         var self = this;
@@ -6,18 +7,69 @@ app.directive('cvscreen', ['mainService', '$window', function(mainService, $wind
         self.experiences = [];
         self.tagColors = ["design", "pure", "js", "yui"];
 
-        self.showExperiences = function(id) {
+        self.showCv = function(id) {
+            bsLoadingOverlayService.start({
+                referenceId: 'header-cv-loading'
+            });
             mainService.getExperiences({id: id})
                 .$promise.then(
                 function(response) {
                     self.experiences = response;
-                    self.isShowing = true;
+                    $timeout(
+                        function() {
+                            self.isShowing = true;
+                            bsLoadingOverlayService.stop({
+                                referenceId: 'header-cv-loading'
+                            });
+                        }
+                        , 200
+                    );
                 },
                 function(err) {
                     self.error = err;
                     self.isShowing = false;
+                    bsLoadingOverlayService.stop({
+                        referenceId: 'header-cv-loading'
+                    });
                 }
             );
+        };
+
+        self.refreshCv = function(id) {
+            bsLoadingOverlayService.start({
+                referenceId: 'body-cv-loading'
+            });
+            mainService.getExperiences({id: id})
+                .$promise.then(
+                function(response) {
+                    self.experiences = response;
+                    $timeout(
+                        function() {
+                            bsLoadingOverlayService.stop({
+                                referenceId: 'body-cv-loading'
+                            });
+                        }
+                        , 200
+                    );
+                },
+                function(err) {
+                    self.error = err;
+                    self.isShowing = false;
+                    bsLoadingOverlayService.stop({
+                        referenceId: 'body-cv-loading'
+                    });
+                }
+            );
+
+
+        };
+
+        self.showExperiences = function(id) {
+            if (self.isShowing) {
+                self.refreshCv(id);
+            } else if (!self.isShowing) {
+                self.showCv(id);
+            }
         };
 
         self.isBigScreen = function() {
