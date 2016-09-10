@@ -111,27 +111,27 @@
 }
 
 @media (max-width: 60em) {
-   .margin__blog--menu {
+    .margin__blog--menu {
      margin-left: 5%;
-   }
-   .custom-restricted {
+    }
+    .custom-restricted {
        height: 150px;
        width: 90%;
        border: 1px solid gray;
        border-radius: 4px;
-   }
+    }
  }
 
 @media (min-width: 60em) {
- .margin__blog--menu {
-   margin-left: 25%;
- }
- .custom-restricted {
+    .margin__blog--menu {
+    margin-left: 25%;
+    }
+    .custom-restricted {
      height: 150px;
      width: 50%;
      border: 1px solid gray;
      border-radius: 4px;
-  }
+    }
 }
 
 .blog__header {

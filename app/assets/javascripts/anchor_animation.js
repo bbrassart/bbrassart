@@ -11,6 +11,6 @@ var anchorAnimation = {
                     return false;
                 }
             }
-        })
+        });
     }
 };
