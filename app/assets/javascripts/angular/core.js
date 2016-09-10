@@ -1,8 +1,8 @@
-app = angular.module('myAngular',[
+var app = angular.module('myAngular',[
     'templates', 'ngAnimate', 'ngResource', 'ngSanitize', 'bsLoadingOverlay', 'bsLoadingOverlaySpinJs'
-]).run(function(bsLoadingOverlayService) {
+]).run(['bsLoadingOverlayService', function(bsLoadingOverlayService) {
     bsLoadingOverlayService.setGlobalConfig({
         templateUrl: 'bsLoadingOverlaySpinJs',
         activeClass: 'loading-content'
     });
-});
+}]);
