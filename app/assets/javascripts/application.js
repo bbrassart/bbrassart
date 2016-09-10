@@ -32,5 +32,4 @@
         anchorAnimation.setInitialListeners();
         twttr.widgets.load();
     })
-
 })();
