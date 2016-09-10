@@ -29,7 +29,6 @@
 
             $('.header').addClass("blog--header");
         }
-
         mobileNavMenu.setInitialListeners();
         anchorAnimation.setInitialListeners();
         twttr.widgets.load();

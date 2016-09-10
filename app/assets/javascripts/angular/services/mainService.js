@@ -13,6 +13,5 @@ app.factory ('mainService', ['blogApiService', 'githubApiService', 'cvApiService
     self.getGithub = function() {
         return githubApiService.query();
     };
-
     return self;
 }]);
