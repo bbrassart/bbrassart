@@ -61,7 +61,6 @@
     transition-timing-function: ease-in-out;
     max-height: 0px;
 }
-
 /* when showing the picture */
 
 .loading-content > *:not(.spinner) {
