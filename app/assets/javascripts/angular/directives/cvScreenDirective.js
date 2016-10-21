@@ -72,7 +72,7 @@ app.directive('cvscreen', ['mainService','bsLoadingOverlayService', '$timeout', 
                 }
             };
 
-            self.isBigScreen = function() {
+            self.isDesktop = function() {
                 return $window.innerWidth > 568;
             };
 

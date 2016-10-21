@@ -20,44 +20,43 @@
         </div>
         <div class="ribbon">
             <div id="limitCv">
-                <div class="experiences" ng-show="vm.isShowing" ng-cloak>
-                    <div ng-repeat="xp in vm.experiences">
-                        <div class="xp-col pure-u-sm-1-1" ng-class="vm.isBigScreen() ? 'med-col' : ''">
-                            <p>
-                                <b>{{xp.title}}</b> at
-                                <a class="company-link" target=_blank ng-href={{xp.official_url}}>
-                                    {{xp.company_name}}
-                                </a>
+                <div ng-repeat="xp in vm.experiences" class="experiences" ng-show="vm.isShowing" ng-cloak>
+                    <div ng-class="vm.isDesktop() ? 'line-separator' : ''"></div>
+                    <div class="xp-col pure-u-sm-1-1" ng-class="vm.isDestkop() ? 'med-col' : ''">
+                        <p>
+                            <b>{{xp.title}}</b> at
+                            <a class="company-link" target=_blank ng-href={{xp.official_url}}>
+                                {{xp.company_name}}
+                            </a>
+                        </p>
+                        <span ng-bind-html=xp.description></span>
+                    </div>
+                    <div class="xp-col pure-u-md-1-2 pure-u-sm-1-1 cv-column">
+                        <p>
+                            <b>{{xp.location}}</b>
+                        </p>
+                        <div class="pure-u-md-1-2">
+                            <p>Starting date: {{xp.starting_date}}</p>
+                            <p ng-show="xp.ending_date">
+                                Ending date: {{xp.ending_date}}
                             </p>
-                            <span ng-bind-html=xp.description></span>
+                            <p ng-show="!xp.ending_date">
+                                Current
+                            </p>
                         </div>
-                        <div class="xp-col pure-u-md-1-2 pure-u-sm-1-1 cv-column">
-                            <p>
-                                <b>{{xp.location}}</b>
-                            </p>
-                            <div class="pure-u-md-1-2">
-                                <p>Starting date: {{xp.starting_date}}</p>
-                                <p ng-show="xp.ending_date">
-                                    Ending date: {{xp.ending_date}}
-                                </p>
-                                <p ng-show="!xp.ending_date">
-                                    Current
-                                </p>
-                            </div>
-                            <div class="pure-u-md-1-2">
-                                <a ng-href={{xp.official_url}} target=_blank>
-                                    <img ng-src={{xp.company_logo}} class="xp-logo" height=100px>
-                                </a>
-                            </div>
-                            <br><br>
-                        <span ng-repeat="tag in xp.tags track by $index">
-                            <span class="post-category post-category-{{vm.tagColors[$index]}}">
-                                {{tag}}
-                            </span>
-                        </span>
+                        <div class="pure-u-md-1-2">
+                            <a ng-href={{xp.official_url}} target=_blank>
+                                <img ng-src={{xp.company_logo}} class="xp-logo" height=100px>
+                            </a>
                         </div>
                         <br><br>
+                    <span ng-repeat="tag in xp.tags track by $index">
+                        <span class="post-category post-category-{{vm.tagColors[$index]}}">
+                            {{tag}}
+                        </span>
+                    </span>
                     </div>
+                    <br><br>
                 </div>
             </div>
         </div>
