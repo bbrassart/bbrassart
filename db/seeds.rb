@@ -338,7 +338,8 @@ year_2016.experiences.create(
     tags: ["developer", "ruby on rails", "javascript", "code"],
     company_name: "Devex",
     location: "Barcelona",
-    description:"<ul><li>Improving the current features, working hand in hand with both the front-end and the back-end teams</li></ul>",
+    description:"<ul><li>Improving the current features, working hand in hand with both the front-end and the back-end teams</li>
+    <li>Bringing more interactivity to specific pages using AngularJS</li></ul>",
     company_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/devex.jpg"
 )
 

@@ -49,7 +49,7 @@ app.directive('cvscreen', ['mainService','bsLoadingOverlayService', '$timeout', 
                                     referenceId: 'body-cv-loading'
                                 });
                             }
-                            , 200
+                            , 1500
                         );
                     },
                     function(err) {
