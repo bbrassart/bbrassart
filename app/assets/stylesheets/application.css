@@ -195,6 +195,10 @@ div#limitGithub {
   }
 }
 
+.violet-bg {
+  background-color: #8156a7;
+}
+
 @media (max-width: 500px) {
   .contact--form {
     padding-top: 0 !important;

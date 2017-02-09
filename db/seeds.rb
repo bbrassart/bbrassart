@@ -329,9 +329,9 @@ tags: ["gopro", "action cam", "skateboarding", "video"]
 Experience.destroy_all
 Year.destroy_all
 
-year_2016 = Year.create(title: 2016)
+[*2010..2017].each {|year| Year.create(title: year) }
 
-year_2016.experiences.create(
+devex_xp = {
     official_url: "https://www.devex.com/",
     starting_date: DateTime.new(2016, 7, 4),
     title: "Web Developer",
@@ -341,9 +341,12 @@ year_2016.experiences.create(
     description:"<ul><li>Improving the current features, working hand in hand with both the front-end and the back-end teams</li>
     <li>Bringing more interactivity to specific pages using AngularJS</li></ul>",
     company_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/devex.jpg"
-)
+}
 
-year_2016.experiences.create(
+Year.find_by(title: 2017).experiences.create(devex_xp)
+Year.find_by(title: 2016).experiences.create(devex_xp)
+
+Year.find_by(title: 2016).experiences.create(
   official_url: "https://www.shoesize.me",
   starting_date: DateTime.new(2016, 1, 18),
   ending_date: DateTime.new(2016, 6, 23),
@@ -357,9 +360,7 @@ year_2016.experiences.create(
   company_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/shoesizeme.jpg"
 )
 
-year_2015 = Year.create(title: 2015)
-
-year_2015.experiences.create(
+Year.find_by(title: 2015).experiences.create(
 official_url: "https://www.ironhack.com/",
 starting_date: DateTime.new(2015, 8, 1),
 ending_date: DateTime.new(2015, 12, 1),
@@ -376,7 +377,7 @@ description: "<ul><li>After graduating from IronHack, I'm now working as a teach
 company_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/ironhack.png"
 )
 
-year_2015.experiences.create(
+Year.find_by(title: 2015).experiences.create(
   official_url: "https://www.ironhack.com/",
   starting_date: DateTime.new(2015, 6, 1),
   ending_date: DateTime.new(2015, 8, 1),
@@ -392,7 +393,7 @@ year_2015.experiences.create(
   company_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/ironhack.png"
 )
 
-softonic = {
+softonic_xp = {
   official_url: "http://www.softonic.com/",
   starting_date: DateTime.new(2010, 12, 1),
   ending_date: DateTime.new(2014, 12, 1),
@@ -413,16 +414,10 @@ softonic = {
   company_logo: "https://s3-us-west-2.amazonaws.com/bbrassart/softonic.png"
 }
 
-year_2014 = Year.create(title: 2014)
-year_2014.experiences.create(softonic)
-year_2013 = Year.create(title: 2013)
-year_2013.experiences.create(softonic)
-year_2012 = Year.create(title: 2012)
-year_2012.experiences.create(softonic)
-year_2011 = Year.create(title: 2011)
-year_2011.experiences.create(softonic)
-year_2010 = Year.create(title: 2010)
-year_2010.experiences.create(softonic)
-
+Year.find_by(title: 2014).experiences.create(softonic_xp)
+Year.find_by(title: 2013).experiences.create(softonic_xp)
+Year.find_by(title: 2012).experiences.create(softonic_xp)
+Year.find_by(title: 2011).experiences.create(softonic_xp)
+Year.find_by(title: 2010).experiences.create(softonic_xp)
 
 puts "DB filled"
